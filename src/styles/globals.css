@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
 
 @font-face {
     font-family: roboto;
@@ -11,4 +12,8 @@
 @font-face {
     font-family: light;
     src: url('../../public/fonts/Roboto-Light.ttf');
+}
+
+.Raleway {
+    font-family: 'Raleway', sans-serif;
 }

@@ -1,6 +1,6 @@
 'use client'      
 import { useEffect, useState } from "react";
-import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+import { HiMiniArrowLongLeft, HiMiniArrowLongRight } from "react-icons/hi2";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Hero() {
@@ -39,7 +39,7 @@ function Hero() {
   }, [allImages.length]); // Include allImages.length as a dependency to ensure correct cleanup
 
   return (
-    <div>
+    <section className="overflow-hidden">
       <motion.figure
         key={selectedImage}
         initial={{ x: -100, opacity: 0, scale: 0.8 }}
@@ -68,25 +68,25 @@ function Hero() {
 
       <ul className="flex justify-between ">
         <li
-          className="absolute text-center  animate-bounce border-2 border-white rounded-full hover:border-red-500 text-5xl text-red-600 hover:text-green-500 top-2/3 left-5 cursor-pointer transition duration-300 ease-in-out hover:opacity-100"
+          className="absolute text-4xl text-white hover:text-yellow-500 bg-white/40 hover:bg-white  p-2 top-2/3 left-5 cursor-pointer transition duration-300 ease-in-out hover:opacity-100"
           onClick={() => {
             if (selectedImage > 0) setSelectedImage(selectedImage - 1);
           }}
         >
-          <FaArrowCircleLeft />
+          <HiMiniArrowLongLeft />
         </li>
 
         <li
-          className="absolute text-5xl text-red-600 animate-bounce border-2 border-white rounded-full hover:border-red-500 hover:text-green-500  top-2/3 right-5 cursor-pointer transition duration-300 ease-in-out hover:opacity-100"
+          className="absolute text-4xl text-white hover:text-yellow-500 bg-white/40 hover:bg-white p-2 top-2/3 right-5 cursor-pointer transition duration-300 ease-in-out hover:opacity-100"
           onClick={() => {
             if (selectedImage < allImages.length - 1)
               setSelectedImage(selectedImage + 1);
           }}
         >
-          <FaArrowCircleRight />
+          <HiMiniArrowLongRight />
         </li>
       </ul>
-    </div>
+    </section>
   );
 }
 
