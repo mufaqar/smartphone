@@ -12,3 +12,15 @@
     font-family: light;
     src: url('../../public/fonts/Roboto-Light.ttf');
 }
+
+@font-face {
+
+    font-family: italic;
+    src: url('../../public/fonts/Roboto-BoldItalic.ttf');
+}
+
+@font-face {
+
+    font-family: medium;
+    src: url('../../public/fonts/Roboto-Medium.ttf');
+}
