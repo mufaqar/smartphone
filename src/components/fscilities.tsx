@@ -44,7 +44,7 @@ function Facilities() {
             }} className='grid md:grid-cols-2 grid-cols-1 mt-10  mx-auto px-4 container'>
             {Services_Data.map((item, idx) => {
               return (
-                <div key={idx} className=" [&:nth-child(1)]:bg-blue-900 [&:nth-child(4)]:bg-blue-900 first:[&>.a-child-class]:text-5xl text-center duration-300 bg-white hover:bg-yellow-500 group py-5 shadow-[0px_0px_15px_0px_rgb(0,0,0,32%)]">
+                <div key={idx} className=" [&:nth-child(1)]:bg-blue-900 [&:nth-child(4)]:bg-blue-900 text-center duration-300 bg-white hover:bg-yellow-500 group py-5 shadow-[0px_0px_15px_0px_rgb(0,0,0,32%)]">
                   <div className="mx-auto flex h-16 w-16 mb-5 items-center justify-center group-hover:bg-black rounded-full bg-stone-100">
                     <span className='text-3xl text-black group-hover:text-white'>
                       {item.icon}
