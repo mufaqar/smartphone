@@ -17,39 +17,32 @@ function Header() {
               opacity:{duration:1},
               ease:"easeIn",
               duration:1,
-          }} className="flex items-center justify-between flex-wrap p-6 lg:bg-teal-950 bg-teal-500">
+          }} className="flex items-center justify-between flex-wrap lg:p-6   lg: bg-gradient-to-r lg:from-teal-500   lg:to-teal-950  bg-teal-400">
     <nav className='container mx-auto px-4'>
 
 
-    <div className="lg:absolute flex top-0 flex-shrink-0 text-white mr-6 lg:mr-72 bg-white w-48 skew-x-12 lg:h-full" >
+    <div className="absolute flex lg:top-0 flex-shrink-0 text-white w-48 px-4 mr-6 lg:mr-72 lg:bg-teal-500 lg:w-60 skew-x-12 lg:h-full" >
        <img src='images/logo.avif' className=" " alt="Logo" />
      </div>
-     <div className="block lg:hidden">
+     <div className="block lg:hidden float-right pt-4">
        <button
          onClick={() => setIsOpen(!isOpen)}
-         className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
+         className="flex items-center px-3  pb-4 rounded text-black-500 hover:text-black-400 "
        >
 
 
-         <motion.li
-  initial={{ scale: 0 }}
-  animate={{ rotate: 180, scale: 1 }}
-  transition={{
-    type: "spring",
-    stiffness: 260,
-    damping: 20
-  }} className={`fill-current text-3xl  ${isOpen ? "block" : "hidden"}`}>
+         <li className={`fill-current text-3xl  ${isOpen ? "block" : "hidden"}`}>
 <GiCancel />
-</motion.li>
+</li>
          <li
-           className={`fill-current text-3xl ${isOpen ? "hidden" : "block"}`}
+           className={`fill-current text-3xl  ${isOpen ? "hidden" : "block"}`}
          >
            <LuMenuSquare />
          </li>
        </button>
      </div>
      <div
-       className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
+       className={`w-full pb-4 lg:pb-0 pt-16 lg:pt-0 block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
      >
         <div className="text-sm lg:flex-grow lg:pl-72">
             {data.map((item, idx) => (
@@ -99,3 +92,5 @@ export const data = [
     title: "  Contact Us",
   },
 ]
+
+

@@ -12,7 +12,7 @@ import Link from 'next/link';
 import { motion } from "framer-motion";
 function Facilities() {
   return (
-    <section className=' cursor-pointer bg-[#D79800]'>
+    <section className=' cursor-pointer bg-[#D79800] '>
       <div className=''>
 
         <h2 className='md:text-7xl text-3xl font-bold text-center pt-16 font-[roboto]'>
@@ -56,10 +56,10 @@ function Facilities() {
 
       <section className='container mx-auto px-4'>
 
-        <div className='lg:flex   mt-10 lg:divide-x-2 lg:divide-black'>
+        <div className='lg:flex justify-evenly  mt-10 lg:divide-x-2 lg:divide-black'>
           {data.map((item, idx) => {
             return <div key={idx} className=' py-5 '>
-              <div className='  lg:p-4 w-fit mx-auto flex items-center space-x-4 '>
+              <div className='  p-4 w-fit mx-auto flex items-center space-x-4 '>
                 <li className='list-none lg:text-3xl p-2 rounded-full bg-black text-white hover:bg-orange-500 transition duration-300 ease-in-out hover:opacity-100 '>{item.icon}</li>
                 <motion.h1 initial={{ x: -100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
@@ -69,7 +69,7 @@ function Facilities() {
                     opacity: { duration: 1 },
                     ease: "easeIn",
                     duration: 1,
-                  }} className=' font-bold lg:text-lg hover:text-yellow-100 cursor-pointer text-center lg:font-[roboto] font-[light]'>{item.title}</motion.h1>
+                  }} className=' lg:font-bold lg:text-lg hover:text-yellow-100 text-center cursor-pointer  lg:font-[roboto] font-[light]'>{item.title}</motion.h1>
               </div>
 
             </div>
@@ -191,7 +191,7 @@ export const data = [
     icon: <IoLocation />,
   },
   {
-    title: "info@smartphonesrepair. conzadmin@smartphonesrepair.co.nz",
+    title: "info@smartphonesrepair.",
 
     icon: <PiCardholder />,
   },

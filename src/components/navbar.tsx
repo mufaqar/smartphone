@@ -23,7 +23,7 @@ function Navbar() {
           opacity: { duration: 1 },
           ease: "easeIn",
           duration: 0.5,
-        }} className=" bg-[#000] font-rrobo 
+        }} className=" bg-gradient-to-r from-black to-teal-950   font-rrobo 
           mx-auto px-6 py-4 max-w-full items-center ">
         <div className="flex lg:space-x-6 space-x-2 container mx-auto px-4 lg:divide-x-[1px]   items-center ">
           {/* Start : Logo */}
