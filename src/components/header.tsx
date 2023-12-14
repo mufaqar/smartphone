@@ -53,7 +53,7 @@ function Header() {
      >
         <div className="text-sm lg:flex-grow lg:pl-72">
             {data.map((item, idx) => (
-              <Link key={idx} href="#" className='block  hover:bg-[#D79800] px-4 py-2 lg:inline-block text-lg lg:mt-0 text-white mr-4 transition duration-300 ease-in-out hover:opacity-100 hover:text-black font-[light]'>
+              <Link key={idx}  href={item.link || '#'} className='block  hover:bg-[#D79800] px-4 py-2 lg:inline-block text-lg lg:mt-0 text-white mr-4 transition duration-300 ease-in-out hover:opacity-100 hover:text-black font-[light]'>
                 {item.title}
               </Link>
             ))}
@@ -77,19 +77,23 @@ export default Header
 export const data = [
   {
     title: "Home",
-    
+    link:'/'
   },
   {
     title: " About",
+    link:'/about'
   },
   {
     title: " Services",
+    link:'/'
   },
   {
     title: "  iPhone Repair",
+    link:'/'
   },
   {
     title: "  Blog",
+    link:'/blogs'
   },
   {
     title: "  Contact Us",
