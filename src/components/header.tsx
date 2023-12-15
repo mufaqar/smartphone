@@ -99,20 +99,27 @@ export default Header
 export const data = [
   {
     title: "Home",
+    link:'/'
   },
   {
     title: " About",
+    link:'/about'
   },
   {
     title: " Services",
+    link:'/'
   },
   {
     title: "  iPhone Repair",
+    link:'/'
   },
   {
     title: "  Blog",
+    link:'/blogs'
   },
   {
     title: "  Contact Us",
   },
 ]
+
+
