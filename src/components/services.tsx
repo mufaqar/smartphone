@@ -8,7 +8,7 @@ function Services() {
   return (
     <section className='bg-blue-50 py-16' id='services'>
       <div className='container mx-auto px-4'>
-        <h2 className='md:text-4xl text-3xl font-bold text-center Raleway'>
+        <h2 className='md:text-4xl text-3xl font-bold uppercase text-center Raleway'>
           OUR SERVICES
         </h2>
         <motion.div

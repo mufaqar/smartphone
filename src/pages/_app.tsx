@@ -6,11 +6,10 @@ import Header from '@/components/header'
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div>
-     <Navbar/>
-  <Header/>
-  
-  <Component {...pageProps} />
-  <Footer/>
-  </div>
+      <Navbar />
+      <Header />
+      <Component {...pageProps} />
+      <Footer />
+    </div>
   )
 }
