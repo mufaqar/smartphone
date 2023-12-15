@@ -24,7 +24,7 @@ function Services() {
 
           {Services_Data.map((item, idx) => {
             return (
-              <div className='group shadow-lg'>
+              <div className='group shadow-lg' key={idx}>
                 <div className='bg-white relative'>
                   <Image src="/images/service/1.png" alt='service/1.png' width={225} height={189} className='w-full' />
                   <span className="text-yellow-600 group-hover:text-white bg-white group-hover:bg-yellow-600 text-5xl flex items-center justify-center shadow-md absolute bottom-3 left-1/2 -translate-x-1/2 p-2 w-20 h-20 rounded-full transition duration-300 ease-in-out">
