@@ -6,12 +6,14 @@ import { GiCancel } from "react-icons/gi";
 import Image from 'next/image';
 import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
+import MobileNav from './mobile-nav';
 
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
+    <>
     <header className='bg-white relative md:block hidden'>
       <div className='bg-black py-3'>
         <div className='container mx-auto px-4'>
@@ -88,6 +90,8 @@ function Header() {
         </div>
       </div>
     </header>
+    <MobileNav />
+    </>
   );
 }
 export default Header
