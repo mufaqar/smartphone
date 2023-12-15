@@ -140,7 +140,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className='bg-gray-700 py-5'>
+      <div className='bg-gray-900 py-5'>
         <div className='container mx-auto px-4 items-center grid md:grid-cols-2 grid-cols-1 gap-7'>
           <p className='text-base font-normal text-white'>
             Copyright © 2022. All Rights Reserved By CM-Repair
