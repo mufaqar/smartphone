@@ -37,7 +37,7 @@ function Navbar() {
           </div>
           <div className='lg:block hidden'>
             <div className='flex items-center px-4 '>
-              <Link href={''} className='text-sm p-2  tetx-blue-600 text-white hover:bg-orange-500  rounded-full bg-blue-600 hover:bg-orange-500 transition duration-300 ease-in-out hover:opacity-100'> <GiTimeBomb /></Link>
+              <Link href={''} className='text-sm p-2  tetx-blue-600 text-white rounded-full bg-blue-600 hover:bg-orange-500 transition duration-300 ease-in-out hover:opacity-100'> <GiTimeBomb /></Link>
 
               <p className='text-sm text-white pl-2 hover:text-blue-300 cursor-pointer font-[light]'> Mon - Friday: 9am to 5pm
                 Saturday - Friday: 10am to 4pm</p>
@@ -46,7 +46,7 @@ function Navbar() {
           <div className='lg:block hidden'>
             <div className='   flex items-center px-4  '>
               <li className='list-none text-sm p-2 rounded-full bg-blue-600 text-white hover:bg-orange-500 transition duration-300 ease-in-out hover:opacity-100'><IoLocation /></li>
-              <p className='text-white hover:text-blue-300 cursor-pointer text-center pl-2 cursor-pointer font-[light]' >info@smartphonesrepair</p>
+              <p className='text-white hover:text-blue-300  text-center pl-2 cursor-pointer font-[light]' >info@smartphonesrepair</p>
             </div></div>
 
           <div
