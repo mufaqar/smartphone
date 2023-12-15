@@ -42,7 +42,7 @@ function Hero() {
     <section className="overflow-hidden">
       <motion.figure
         key={selectedImage}
-        initial={{ x: -100, opacity: 0, scale: 0.8 }}
+        initial={{}}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{
           delay: 0.2,
