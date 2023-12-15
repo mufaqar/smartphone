@@ -20,16 +20,16 @@ function Header() {
           <div className='flex justify-between items-center w-2/3 ml-auto'>
             <ul className='flex flex-row gap-3 justify-end items-center'>
               <li className='group'>
-                <span className='text-base font-normal text-white group-hover:text-yellow-500 flex gap-1  items-center'>
-                  <span className='text-base font-normal text-white group-hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border group-hover:border-yellow-500 items-center justify-center'>
+                <span className='text-sm font-medium text-white group-hover:text-yellow-500 flex gap-1  items-center'>
+                  <span className='text-base font-medium text-white group-hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border group-hover:border-yellow-500 items-center justify-center'>
                     <FaLocationDot />
                   </span> Mon - Friday: 9am to 5pm Saturday - Friday: 10am to 4pm
                 </span>
               </li>
               <li className='text-white'>|</li>
               <li className='group'>
-                <Link href="#" className='text-base font-normal text-white group-hover:text-yellow-500 flex gap-1  items-center'>
-                  <span className='text-base font-normal text-white group-hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border group-hover:border-yellow-500 items-center justify-center'>
+                <Link href="#" className='text-sm font-medium text-white group-hover:text-yellow-500 flex gap-1  items-center'>
+                  <span className='text-base font-medium text-white group-hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border group-hover:border-yellow-500 items-center justify-center'>
                     <FaPhoneAlt />
                   </span> +64-7-3477044
                 </Link>
@@ -74,14 +74,14 @@ function Header() {
               <ul className='flex md:flex-row flex-col gap-5 justify-end'>
                 {data.map((item, idx) => (
                   <li key={idx}>
-                    <Link href="#" className='text-base font-medium text-white hover:text-yellow-500'>
+                    <Link href="#" className='text-base font-semibold text-white hover:text-yellow-500'>
                       {item?.title}
                     </Link>
                   </li>
                 ))}
               </ul>
               <div>
-                <Link href="#" className='text-base font-medium text-white bg-yellow-500 hover:bg-black px-6 py-3'>
+                <Link href="#" className='text-base font-semibold text-white bg-yellow-500 hover:bg-black px-6 py-3'>
                   Book a Services
                 </Link>
               </div>
