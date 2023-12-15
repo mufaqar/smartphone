@@ -17,12 +17,12 @@ function Header() {
               opacity:{duration:1},
               ease:"easeIn",
               duration:1,
-          }} className="flex items-center justify-between flex-wrap lg:p-6   lg: bg-gradient-to-r lg:from-teal-500   lg:to-teal-950  bg-teal-400">
-    <nav className='container mx-auto px-4'>
+          }} className="flex items-center justify-between flex-wrap lg:p-6   lg: bg-gradient-to-r lg:from-teal-500   lg:to-teal-950  bg-blue-300">
+    <div className='container mx-auto px-4'>
 
 
-    <div className="absolute flex lg:top-0 flex-shrink-0 text-white w-48 px-4 mr-6 lg:mr-72 lg:bg-teal-500 lg:w-60 skew-x-12 lg:h-full" >
-       <img src='images/logo.avif' className=" " alt="Logo" />
+    <div className="absolute flex lg:top-0 lg:mt-0 mt-2 flex-shrink-0 text-white w-48 px-4 mr-6 lg:mr-72 lg:bg-teal-500 lg:w-60 skew-x-12 lg:h-full" >
+       <img src='images/logo.avif' className="m-auto " alt="Logo" />
      </div>
      <div className="block lg:hidden float-right pt-4">
        <button
@@ -44,9 +44,9 @@ function Header() {
      <div
        className={`w-full pb-4 lg:pb-0 pt-16 lg:pt-0 block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
      >
-        <div className="text-sm lg:flex-grow lg:pl-72">
+        <div className="text-sm lg:flex-grow lg:pl-96">
             {data.map((item, idx) => (
-              <Link key={idx}  href={item.link || '#'} className='block  hover:bg-[#D79800] px-4 py-2 lg:inline-block text-lg lg:mt-0 text-white mr-4 transition duration-300 ease-in-out hover:opacity-100 hover:text-black font-[light]'>
+              <Link key={idx}  href={item.link || '#'} className='block  hover:bg-[#D79800] px-4 py-2 lg:inline-block text-lg lg:mt-0 lg:text-white mr-4 transition duration-300 ease-in-out hover:opacity-100 hover:text-black font-[light]'>
                 {item.title}
               </Link>
             ))}
@@ -57,7 +57,7 @@ function Header() {
             </button>
           </div>
      </div>
-     </nav>
+     </div>
    </motion.header>
    </section>
  );
@@ -82,7 +82,7 @@ export const data = [
   },
   {
     title: "  iPhone Repair",
-    link:'/'
+    link:'/repairing'
   },
   {
     title: "  Blog",

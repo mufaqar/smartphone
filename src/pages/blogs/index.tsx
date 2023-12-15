@@ -79,7 +79,7 @@ function header() {
               opacity:{duration:1},
               ease:"easeIn",
               duration:1,
-          }} className='lg:grid md:grid-cols-3 lg:grid-cols-3 lg:gap-7 mt-10'>
+          }} className='lg:grid md:grid-cols-2 lg:grid-cols-3 lg:gap-7 mt-10'>
         {
           data.map((item, idx) => {
             return (
@@ -87,7 +87,7 @@ function header() {
               <div key={idx} className="block rounded-lg  bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                 <div >
                   <img
-                    className="rounded-t-lg hover:-translate-y-1 lg:hover:scale-110   duration-300"
+                    className="rounded-t-lg  hover:-translate-y-1 lg:hover:scale-110   duration-300"
                     src={item.img}
                     alt=""
                   />

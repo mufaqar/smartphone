@@ -24,3 +24,9 @@
     font-family: medium;
     src: url('../../public/fonts/Roboto-Medium.ttf');
 }
+
+@font-face {
+
+    font-family: black;
+    src: url('../../public/fonts/Roboto-Black.ttf');
+}

@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { MdOutlineSettingsSuggest } from "react-icons/md";
+import { GrServices } from "react-icons/gr";
 import { SiFiles } from "react-icons/si";
 import { TiPower } from "react-icons/ti";
 import { FaCar } from "react-icons/fa6";
-import { IoLocation } from "react-icons/io5";
+import { RiMapPinLine } from "react-icons/ri";
 import { PiCardholder } from "react-icons/pi";
 import { FaPhone } from "react-icons/fa6";
 import Form from './form';
@@ -29,16 +29,16 @@ function Facilities() {
             opacity: { duration: 1 },
             ease: "easeIn",
             duration: 1,
-          }} className='grid md:grid-cols-4 grid-cols-1 gap-7 mt-10  mx-auto px-4 container mt-16'>
+          }} className='grid md:grid-cols-4 grid-cols-1 gap-7 mt-10  mx-auto px-4 container mt-16 lg:space-y-0 space-y-4'>
           {Services_Data.map((item, idx) => {
             return (
 
 
               <div key={idx} className="rounded-xl bg-green-50  text-center shadow-xl hover:-translate-y-1 lg:hover:scale-110   duration-300 hover:bg-red-500 group bg-white py-5 rounded-md text-[#D79800] shadow-[0px_0px_15px_0px_rgb(0,0,0,32%)]">
-                <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center group-hover:bg-black rounded-full bg-stone-100 shadow-lg shadow-teal-500/40">
-                  <Link className='text-3xl text-black group-hover:text-white' href={'/'}>{item.icon}</Link>
+                <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center group-hover:bg-black rounded-full bg-red-100 shadow-lg shadow-teal-500/40">
+                  <li className='text-3xl list-none text-black group-hover:text-white'>{item.icon}</li>
                 </div>
-                <h1 className='text-darken text-black group-hover:text-white mb-3 text-xl font-medium lg:px-14 font-[roboto]'>
+                <h1 className='text-darken text-black group-hover:text-white mb-3 lg:text-xl font-medium lg:px-14 font-[light] lg:font-[roboto]'>
                   {item.title}
                 </h1>
 
@@ -54,7 +54,7 @@ function Facilities() {
       {/*location*/}
 
 
-      <section className='container mx-auto px-4'>
+      <section className='container mx-auto px-4 lg:block hidden'>
 
         <div className='lg:flex justify-evenly  mt-10 lg:divide-x-2 lg:divide-black'>
           {data.map((item, idx) => {
@@ -161,7 +161,7 @@ export const Services_Data = [
   {
     title: "Expert Xbox Repair Services: Repairs Xbox: Rotorua",
 
-    icon: <MdOutlineSettingsSuggest />,
+    icon: <GrServices />,
   },
   {
     title: "Fast and Reliable iPhone Repair Rotorua",
@@ -188,7 +188,7 @@ export const data = [
   {
     title: "1191 Eruera Street Rotorua. 3010",
 
-    icon: <IoLocation />,
+    icon: <RiMapPinLine />,
   },
   {
     title: "info@smartphonesrepair.",

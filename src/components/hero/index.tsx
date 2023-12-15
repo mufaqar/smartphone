@@ -54,21 +54,15 @@ function Hero() {
         }}
       >
         <AnimatePresence >
-          <motion.img
+          <img
             key={selectedImage}
-            className="h-screen w-full relative transition-opacity duration-500 "
+            className="lg:h-screen w-full relative transition-opacity duration-500 "
             src={allImages[selectedImage].img}
             alt=""
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
           />
-        </AnimatePresence>
-      </motion.figure>
-
-      <ul className="flex justify-between ">
+           <ul className="flex justify-between lg:block hidden">
         <li
-          className="absolute text-center  animate-bounce border-2 border-white rounded-full hover:border-red-500 text-5xl text-red-600 hover:text-green-500 top-2/3 left-5 cursor-pointer transition duration-300 ease-in-out hover:opacity-100"
+          className="absolute text-center items-center animate-bounce border-2 border-white rounded-full hover:border-red-500 text-5xl text-red-600 hover:text-green-500 lg:top-2/3 top:1/3  left-5 cursor-pointer transition duration-300 ease-in-out hover:opacity-100"
           onClick={() => {
             if (selectedImage > 0) setSelectedImage(selectedImage - 1);
           }}
@@ -77,7 +71,7 @@ function Hero() {
         </li>
 
         <li
-          className="absolute text-5xl text-red-600 animate-bounce border-2 border-white rounded-full hover:border-red-500 hover:text-green-500  top-2/3 right-5 cursor-pointer transition duration-300 ease-in-out hover:opacity-100"
+          className="absolute lg:text-5xl text-xl text-red-600 animate-bounce border-2 border-white rounded-full hover:border-red-500 hover:text-green-500  lg:top-2/3 right-5 top-1/2 cursor-pointer transition duration-300 ease-in-out hover:opacity-100"
           onClick={() => {
             if (selectedImage < allImages.length - 1)
               setSelectedImage(selectedImage + 1);
@@ -86,6 +80,10 @@ function Hero() {
           <FaArrowCircleRight />
         </li>
       </ul>
+        </AnimatePresence>
+      </motion.figure>
+
+     
     </div>
   );
 }

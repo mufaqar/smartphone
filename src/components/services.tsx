@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function Services() {
   return (
-    <section className='bg-blue-50/40 py-16' id='services'>
+    <section className='bg-blue-50/40 lg:py-16 py-4' id='services'>
       <div className='container mx-auto px-4'>
         <h2 className='md:text-7xl text-3xl font-bold text-center '>
           OUR SERVICES
@@ -19,7 +19,7 @@ function Services() {
               opacity:{duration:1},
               ease:"easeIn",
               duration:1,
-          }} className='grid md:grid-cols-4 grid-cols-1 gap-7 mt-10'>
+          }} className='grid md:grid-cols-4 grid-cols-1 gap-7 lg:mt-10 mt-6'>
           {Services_Data.map((item, idx) => {
             return (
            <div key={idx} className='bg-white py-5 rounded rounded-br-[30px] shadow-[0px_0px_15px_0px_rgb(0,0,0,32%)]'>
@@ -27,7 +27,7 @@ function Services() {
                 <img src={item.icon} alt={item.icon} className='shadow-[0px_0px_15px_0px_rgb(0,0,0,32%)] h-48 w-48 m-auto'
                 />
               </div>
-              <h3 className=' text-sm px-4 text-center text-black font-[light]'>
+              <h3 className=' text-lg px-4  text-center text-black font-[light]'>
                 {item.title}
               </h3>
 
