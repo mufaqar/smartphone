@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
 
 @font-face {
     font-family: roboto;
@@ -13,12 +14,11 @@
     src: url('../../public/fonts/Roboto-Light.ttf');
 }
 
-@font-face {
-
-    font-family: italic;
-    src: url('../../public/fonts/Roboto-BoldItalic.ttf');
+.Raleway,h1,h2,h3,h4,h5,h6,p,li,span,a {
+    font-family: 'Raleway', sans-serif;
 }
 
+<<<<<<< HEAD
 @font-face {
 
     font-family: medium;
@@ -29,4 +29,20 @@
 
     font-family: black;
     src: url('../../public/fonts/Roboto-Black.ttf');
+=======
+.shape::after{
+    content: "";
+    background: #fff;
+    position: absolute;
+    transition: all 0.3s ease-in;
+    z-index: -1;
+    height: 100%;
+    top: 0;
+    transform: skew(40deg);
+    transition-duration: 0.6s;
+    transform-origin: top left;
+    width: 108%;
+    left: -165px;
+    z-index: 2;
+>>>>>>> main
 }

@@ -1,37 +1,69 @@
 import Image from 'next/image'
-
 import React from 'react'
 import { motion } from "framer-motion";
+import Link from 'next/link';
+import { FaMobileAlt } from "react-icons/fa";
 
 function Services() {
   return (
+<<<<<<< HEAD
     <section className='bg-blue-50/40 lg:py-16 py-4' id='services'>
+=======
+    <section className='bg-blue-50 py-16' id='services'>
+>>>>>>> main
       <div className='container mx-auto px-4'>
-        <h2 className='md:text-7xl text-3xl font-bold text-center '>
+        <h2 className='md:text-4xl text-3xl font-bold uppercase text-center Raleway'>
           OUR SERVICES
         </h2>
-          <motion.div
-          initial={{x:-100, opacity:0}}
-          animate={{x:0, opacity:1}}
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{
+<<<<<<< HEAD
               delay:0.2,
               x:{type:"spring",stiffness:60},
               opacity:{duration:1},
               ease:"easeIn",
               duration:1,
           }} className='grid md:grid-cols-4 grid-cols-1 gap-7 lg:mt-10 mt-6'>
+=======
+            delay: 0.2,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }} className='grid md:grid-cols-4 grid-cols-1 gap-7 mt-10'>
+
+>>>>>>> main
           {Services_Data.map((item, idx) => {
             return (
-           <div key={idx} className='bg-white py-5 rounded rounded-br-[30px] shadow-[0px_0px_15px_0px_rgb(0,0,0,32%)]'>
-              <div className='  p-4  mx-auto h-56'>
-                <img src={item.icon} alt={item.icon} className='shadow-[0px_0px_15px_0px_rgb(0,0,0,32%)] h-48 w-48 m-auto'
-                />
+              <div className='group shadow-lg' key={idx}>
+                <div className='bg-white relative'>
+                  <Image src="/images/service/1.png" alt='service/1.png' width={225} height={189} className='w-full' />
+                  <span className="text-yellow-600 group-hover:text-white bg-white group-hover:bg-yellow-600 text-5xl flex items-center justify-center shadow-md absolute bottom-3 left-1/2 -translate-x-1/2 p-2 w-20 h-20 rounded-full transition duration-300 ease-in-out">
+                    <FaMobileAlt />
+                  </span>
+                </div>
+                <div className='bg-white py-10 px-5'>
+                  <h3 className='text-xl font-bold text-center Raleway mb-5'>
+                    Data Recovery
+                  </h3>
+                  <p className='text-base font-normal text-center Raleway mb-5'>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit dolore magna aliqua.
+                  </p>
+                  <Link href="#" className='block text-base font-semibold text-white Raleway bg-yellow-600 group-hover:bg-white group-hover:text-yellow-600 border-2 border-yellow-600 px-6 py-1.5 w-fit mx-auto transition duration-300 ease-in-out'>
+                    Read more
+                  </Link>
+                </div>
               </div>
+<<<<<<< HEAD
               <h3 className=' text-lg px-4  text-center text-black font-[light]'>
                 {item.title}
               </h3>
 
             </div>
+=======
+>>>>>>> main
             )
           })}
         </motion.div>
