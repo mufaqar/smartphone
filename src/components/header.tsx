@@ -90,7 +90,7 @@ function Header() {
         </div>
       </div>
     </header>
-    <MobileNav />
+    <MobileNav data={data} isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );
 }
