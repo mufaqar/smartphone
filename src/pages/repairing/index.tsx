@@ -7,9 +7,14 @@ import { PiCardholder } from "react-icons/pi";
 import { FaPhone } from "react-icons/fa6";
 import { FcGlobe } from "react-icons/fc";
 import { motion } from "framer-motion";
+import PageBanner from '@/components/page-banner';
 
 function index() {
     return (
+        <>
+        <PageBanner
+        Custm_BG="bg-[url('/images/about.jpg')]"
+        title="iPhone Repair" />
         <section className='container mx-auto px-4 bg-white mt-10 mb-10 rounded-md shadow-[0px_0px_15px_0px_rgb(0,0,0,10%)]'>
             <motion.div
                 initial={{ x: -100, opacity: 0 }}
@@ -54,34 +59,9 @@ function index() {
                     </div>
 
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </motion.div>
-
-
-
-
-
         </section>
+        </>
     )
 }
 

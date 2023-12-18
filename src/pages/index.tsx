@@ -5,6 +5,7 @@ import Hero from '@/components/hero/index'
 import Services from '@/components/services'
 import Facilities from '@/components/fscilities'
 import Blogs from './blogs'
+import Blog_Sec from '@/components/blogs'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Facilities />
-      <Blogs />
+      <Blog_Sec />
     </>
   )
 }
