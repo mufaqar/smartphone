@@ -6,11 +6,7 @@ import { FaMobileAlt } from "react-icons/fa";
 
 function Services() {
   return (
-<<<<<<< HEAD
     <section className='bg-blue-50/40 lg:py-16 py-4' id='services'>
-=======
-    <section className='bg-blue-50 py-16' id='services'>
->>>>>>> main
       <div className='container mx-auto px-4'>
         <h2 className='md:text-4xl text-3xl font-bold uppercase text-center Raleway'>
           OUR SERVICES
@@ -19,24 +15,15 @@ function Services() {
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{
-<<<<<<< HEAD
               delay:0.2,
               x:{type:"spring",stiffness:60},
               opacity:{duration:1},
               ease:"easeIn",
               duration:1,
           }} className='grid md:grid-cols-4 grid-cols-1 gap-7 lg:mt-10 mt-6'>
-=======
-            delay: 0.2,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 1 },
-            ease: "easeIn",
-            duration: 1,
-          }} className='grid md:grid-cols-4 grid-cols-1 gap-7 mt-10'>
-
->>>>>>> main
           {Services_Data.map((item, idx) => {
             return (
+              <>
               <div className='group shadow-lg' key={idx}>
                 <div className='bg-white relative'>
                   <Image src="/images/service/1.png" alt='service/1.png' width={225} height={189} className='w-full' />
@@ -56,17 +43,14 @@ function Services() {
                   </Link>
                 </div>
               </div>
-<<<<<<< HEAD
               <h3 className=' text-lg px-4  text-center text-black font-[light]'>
                 {item.title}
               </h3>
-
-            </div>
-=======
->>>>>>> main
+              </>
+           
             )
           })}
-        </motion.div>
+         </motion.div>
       </div>
     </section>
   )

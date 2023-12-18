@@ -12,7 +12,6 @@ import MobileNav from './mobile-nav';
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-<<<<<<< HEAD
  return (
   <section className='sticky top-0 z-50'>
      <motion.header
@@ -57,53 +56,6 @@ function Header() {
                 {item.title}
               </Link>
             ))}
-=======
-  return (
-    <>
-    <header className='bg-white relative md:block hidden'>
-      <div className='bg-black py-3'>
-        <div className='container mx-auto px-4'>
-          <div className='flex justify-between items-center w-2/3 ml-auto'>
-            <ul className='flex flex-row gap-3 justify-end items-center'>
-              <li className='group'>
-                <span className='text-sm font-medium text-white group-hover:text-yellow-500 flex gap-1  items-center'>
-                  <span className='text-base font-medium text-white group-hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border group-hover:border-yellow-500 items-center justify-center'>
-                    <FaLocationDot />
-                  </span> Mon - Friday: 9am to 5pm Saturday - Friday: 10am to 4pm
-                </span>
-              </li>
-              <li className='text-white'>|</li>
-              <li className='group'>
-                <Link href="#" className='text-sm font-medium text-white group-hover:text-yellow-500 flex gap-1  items-center'>
-                  <span className='text-base font-medium text-white group-hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border group-hover:border-yellow-500 items-center justify-center'>
-                    <FaPhoneAlt />
-                  </span> +64-7-3477044
-                </Link>
-              </li>
-            </ul>
-            <ul className='flex flex-row gap-3 justify-end'>
-              <li>
-                <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border border-transparent hover:border-yellow-500 items-center justify-center'>
-                  <FaFacebookF />
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border border-transparent hover:border-yellow-500 items-center justify-center'>
-                  <FaTwitter />
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border border-transparent hover:border-yellow-500 items-center justify-center'>
-                  <FaLinkedinIn />
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border border-transparent hover:border-yellow-500 items-center justify-center'>
-                  <FaInstagram />
-                </Link>
-              </li>
-            </ul>
->>>>>>> main
           </div>
         </div>
       </div>
@@ -134,20 +86,11 @@ function Header() {
               </div>
             </nav>
           </div>
-<<<<<<< HEAD
      </div>
      </div>
    </motion.header>
    </section>
  );
-=======
-        </div>
-      </div>
-    </header>
-    <MobileNav data={data} isOpen={isOpen} setIsOpen={setIsOpen} />
-    </>
-  );
->>>>>>> main
 }
 export default Header
 

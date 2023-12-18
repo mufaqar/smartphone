@@ -62,11 +62,7 @@ function Hero() {
           />
            <ul className="flex justify-between lg:block hidden">
         <li
-<<<<<<< HEAD
           className="absolute text-center items-center animate-bounce border-2 border-white rounded-full hover:border-red-500 text-5xl text-red-600 hover:text-green-500 lg:top-2/3 top:1/3  left-5 cursor-pointer transition duration-300 ease-in-out hover:opacity-100"
-=======
-          className="absolute text-4xl text-white hover:text-yellow-500 bg-white/40 hover:bg-white  p-2 top-2/3 left-5 cursor-pointer transition duration-300 ease-in-out hover:opacity-100"
->>>>>>> main
           onClick={() => {
             if (selectedImage > 0) setSelectedImage(selectedImage - 1);
           }}
@@ -75,11 +71,7 @@ function Hero() {
         </li>
 
         <li
-<<<<<<< HEAD
           className="absolute lg:text-5xl text-xl text-red-600 animate-bounce border-2 border-white rounded-full hover:border-red-500 hover:text-green-500  lg:top-2/3 right-5 top-1/2 cursor-pointer transition duration-300 ease-in-out hover:opacity-100"
-=======
-          className="absolute text-4xl text-white hover:text-yellow-500 bg-white/40 hover:bg-white p-2 top-2/3 right-5 cursor-pointer transition duration-300 ease-in-out hover:opacity-100"
->>>>>>> main
           onClick={() => {
             if (selectedImage < allImages.length - 1)
               setSelectedImage(selectedImage + 1);
@@ -88,15 +80,11 @@ function Hero() {
           <HiMiniArrowLongRight />
         </li>
       </ul>
-<<<<<<< HEAD
         </AnimatePresence>
       </motion.figure>
 
      
-    </div>
-=======
     </section>
->>>>>>> main
   );
 }
 

@@ -5,7 +5,6 @@ import Navbar from '@/components/navbar'
 import Header from '@/components/header'
 export default function App({ Component, pageProps }: AppProps) {
   return (
-<<<<<<< HEAD
     <div className='bg-[#f4f4f4]'>
      <Navbar/>
   <Header/>
@@ -13,13 +12,5 @@ export default function App({ Component, pageProps }: AppProps) {
   <Component {...pageProps} />
   <Footer/>
   </div>
-=======
-    <div>
-      {/* <Navbar /> */}
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
-    </div>
->>>>>>> main
   )
 }
