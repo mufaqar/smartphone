@@ -11,9 +11,20 @@ function Form() {
             <div className="relative h-[350px] bg-[url('/images/contact.jpg')] overflow-hidden bg-cover bg-center bg-no-repeat bg-blend-multiply bg-black/50 flex items-center justify-center">
             </div>
             <div className="container mx-auto px-6 md:px-8">
-                <div className="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  md:py-24 md:px-12 -mt-[80px] backdrop-blur-[30px] ">
+                <div className="block rounded-none bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  md:py-24 md:px-12 -mt-[80px] backdrop-blur-[30px] ">
                     <div className="flex md:flex-row flex-col gap-7 items-center">
-                        <div className="md:w-1/2 w-full">
+                        <motion.div
+                            initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                delay: 0.2,
+                                x: { type: "spring", stiffness: 60 },
+                                opacity: { duration: 1 },
+                                ease: "easeIn",
+                                duration: 1,
+                            }}
+                            className="md:w-1/2 w-full">
                             <h3 className='md:text-4xl text-3xl font-bold uppercase text-black Raleway mb-7'>
                                 BOOK APPOINTMENT
                             </h3>
@@ -21,7 +32,7 @@ function Form() {
                                 <div className='grid md:grid-cols-2 grid-cols-1 gap-5'>
                                     <div className="relative">
                                         <input type="text"
-                                            className="Raleway border placeholder:text-black text-gray-900 bg-transparent text-base rounded-lg focus:ring-0 focus:outline-0 block w-full px-5 py-2.5 peer min-h-[auto] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-0 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
+                                            className="Raleway border placeholder:text-black text-gray-900 bg-transparent text-base rounded-none focus:ring-0 focus:outline-0 block w-full px-5 py-2.5 peer min-h-[auto] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-0 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
                                             id="fname"
                                             name="fname"
                                             placeholder='First Name' />
@@ -32,7 +43,7 @@ function Form() {
                                     </div>
                                     <div className="relative">
                                         <input type="text"
-                                            className="Raleway border placeholder:text-black text-gray-900 bg-transparent text-base rounded-lg focus:ring-0 focus:outline-0 block w-full px-5 py-2.5 peer min-h-[auto] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-0 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
+                                            className="Raleway border placeholder:text-black text-gray-900 bg-transparent text-base rounded-none focus:ring-0 focus:outline-0 block w-full px-5 py-2.5 peer min-h-[auto] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-0 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
                                             id="lname"
                                             name="lname"
                                             placeholder='Last Name' />
@@ -43,7 +54,7 @@ function Form() {
                                     </div>
                                     <div className="relative">
                                         <input type="email"
-                                            className="Raleway border placeholder:text-black text-gray-900 bg-transparent text-base rounded-lg focus:ring-0 focus:outline-0 block w-full px-5 py-2.5 peer min-h-[auto] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-0 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
+                                            className="Raleway border placeholder:text-black text-gray-900 bg-transparent text-base rounded-none focus:ring-0 focus:outline-0 block w-full px-5 py-2.5 peer min-h-[auto] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-0 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
                                             id="email"
                                             name="email"
                                             placeholder='Email' />
@@ -54,7 +65,7 @@ function Form() {
                                     </div>
                                     <div className="relative">
                                         <input type="tel"
-                                            className="Raleway border placeholder:text-black text-gray-900 bg-transparent text-base rounded-lg focus:ring-0 focus:outline-0 block w-full px-5 py-2.5 peer min-h-[auto] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-0 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
+                                            className="Raleway border placeholder:text-black text-gray-900 bg-transparent text-base rounded-none focus:ring-0 focus:outline-0 block w-full px-5 py-2.5 peer min-h-[auto] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-0 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
                                             id="phone"
                                             name="phone"
                                             placeholder='Phone' />
@@ -66,20 +77,31 @@ function Form() {
                                 </div>
                                 <div className="relative">
                                     <textarea
-                                        className="Raleway border placeholder:text-black text-gray-900 bg-transparent text-base rounded-lg focus:ring-0 focus:outline-0 block w-full px-5 py-2.5 peer min-h-[auto] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-0 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
+                                        className="Raleway border placeholder:text-black text-gray-900 bg-transparent text-base rounded-none focus:ring-0 focus:outline-0 block w-full px-5 py-2.5 peer min-h-[auto] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-0 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
                                         id="message" rows={4}></textarea>
                                     <label htmlFor="message"
                                         className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-black transition-all duration-200 ease-out -translate-y-[0.9rem] peer-focus:scale-[0.9] peer-focus:opacity-100 opacity-0 peer-focus:text-black peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none ">Message</label>
                                 </div>
-                                <button className={`text-lg Raleway bg-yellow-500 px-10 py-2.5 font-medium text-white hover:bg-black hover:-translate-y-4 rounded-lg`}>
+                                <button className={`text-lg Raleway bg-yellow-500 px-10 py-2.5 font-medium text-white hover:bg-black hover:-translate-y-4 rounded-none`}>
                                     Submit
                                 </button>
                             </form>
-                        </div>
+                        </motion.div>
                         <div className="md:w-1/2 w-full">
                             <div className="grid md:grid-cols-2 grid-cols-1 gap-10 justify-between">
-                                <div className="flex items-start justify-start">
-                                    <div className="inline-block rounded-md bg-yellow-500 p-2 text-white">
+                                <motion.div
+                                    initial={{ x: 100, opacity: 0 }}
+                                    whileInView={{ x: 0, opacity: 1 }}
+                                    viewport={{ once: true }}
+                                    transition={{
+                                        delay: 0.2,
+                                        x: { type: "spring", stiffness: 60 },
+                                        opacity: { duration: 1 },
+                                        ease: "easeIn",
+                                        duration: 1,
+                                    }}
+                                    className="flex items-start justify-start">
+                                    <div className="inline-block bg-yellow-500 p-2 text-white">
                                         <PiCardholder className="text-xl" />
                                     </div>
                                     <div className="ml-2">
@@ -90,9 +112,20 @@ function Form() {
                                             info@smartphonesrepair.
                                         </Link>
                                     </div>
-                                </div>
-                                <div className="flex items-start justify-start">
-                                    <div className="inline-block rounded-md bg-yellow-500 p-2 text-white">
+                                </motion.div>
+                                <motion.div
+                                    initial={{ x: 100, opacity: 0 }}
+                                    whileInView={{ x: 0, opacity: 1 }}
+                                    viewport={{ once: true }}
+                                    transition={{
+                                        delay: 0.2,
+                                        x: { type: "spring", stiffness: 60 },
+                                        opacity: { duration: 1 },
+                                        ease: "easeIn",
+                                        duration: 1,
+                                    }}
+                                    className="flex items-start justify-start">
+                                    <div className="inline-block bg-yellow-500 p-2 text-white">
                                         <IoLocation className="text-xl" />
                                     </div>
                                     <div className="ml-2">
@@ -103,9 +136,20 @@ function Form() {
                                             1191 Eruera Street Rotorua. 3010
                                         </span>
                                     </div>
-                                </div>
-                                <div className="flex items-start justify-start">
-                                    <div className="inline-block rounded-md bg-yellow-500 p-2 text-white">
+                                </motion.div>
+                                <motion.div
+                                    initial={{ x: 100, opacity: 0 }}
+                                    whileInView={{ x: 0, opacity: 1 }}
+                                    viewport={{ once: true }}
+                                    transition={{
+                                        delay: 0.2,
+                                        x: { type: "spring", stiffness: 60 },
+                                        opacity: { duration: 1 },
+                                        ease: "easeIn",
+                                        duration: 1,
+                                    }}
+                                    className="flex items-start justify-start">
+                                    <div className="inline-block bg-yellow-500 p-2 text-white">
                                         <FaEnvelope className="text-xl" />
                                     </div>
                                     <div className="ml-2">
@@ -116,9 +160,20 @@ function Form() {
                                             conzadmin@smartphonesrepair.co.nz
                                         </Link>
                                     </div>
-                                </div>
-                                <div className="flex items-start justify-start">
-                                    <div className="inline-block rounded-md bg-yellow-500 p-2 text-white">
+                                </motion.div>
+                                <motion.div
+                                    initial={{ x: 100, opacity: 0 }}
+                                    whileInView={{ x: 0, opacity: 1 }}
+                                    viewport={{ once: true }}
+                                    transition={{
+                                        delay: 0.2,
+                                        x: { type: "spring", stiffness: 60 },
+                                        opacity: { duration: 1 },
+                                        ease: "easeIn",
+                                        duration: 1,
+                                    }}
+                                    className="flex items-start justify-start">
+                                    <div className="inline-block bg-yellow-500 p-2 text-white">
                                         <FaPhone className="text-xl" />
                                     </div>
                                     <div className="ml-2">
@@ -129,7 +184,7 @@ function Form() {
                                             +64-7-3477044
                                         </Link>
                                     </div>
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                     </div>

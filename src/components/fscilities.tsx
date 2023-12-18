@@ -33,7 +33,8 @@ function Facilities() {
           </div>
           <motion.div
             initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
             transition={{
               delay: 0.2,
               x: { type: "spring", stiffness: 60 },
