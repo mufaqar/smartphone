@@ -142,10 +142,10 @@ function Footer() {
       </div>
       <div className='bg-[#0b1a17] py-5'>
         <div className='container mx-auto px-4 items-center grid md:grid-cols-2 grid-cols-1 gap-7'>
-          <p className='text-sm font-normal text-white'>
+          <p className='text-sm font-normal text-white md:text-start text-center'>
             Copyright © 2022. All Rights Reserved By CM-Repair
           </p>
-          <ul className='flex flex-row justify-end gap-3 '>
+          <ul className='flex flex-row md:justify-end justify-center gap-3 '>
             <li>
               <Link href="#" className='text-sm font-normal text-white hover:text-yellow-500 flex gap-1 items-center'>
               Terms & Conditions

@@ -11,14 +11,14 @@ function MobileNav({ data, isOpen, setIsOpen }: any) {
       <div className='bg-black py-3 container mx-auto px-4 flex flex-row gap-5 justify-between items-center'>
         <ul className='w-full flex flex-col gap-3 justify-center items-center'>
           <li className='group'>
-            <Link href="#" className='text-xs font-normal text-white group-hover:text-yellow-500 flex gap-1  items-center'>
+            <Link href="tel:+64-7-3477044" className='text-xs font-normal text-white group-hover:text-yellow-500 flex gap-1  items-center'>
               <span className='text-xs font-normal text-white group-hover:text-yellow-500 flex gap-1 items-center justify-center'>
                 <FaPhoneAlt />
               </span> +64-7-3477044
             </Link>
           </li>
           <li className='group'>
-            <Link href="#" className='text-xs font-normal text-white group-hover:text-yellow-500 flex gap-1  items-center'>
+            <Link href="mailto:info@example.com" className='text-xs font-normal text-white group-hover:text-yellow-500 flex gap-1  items-center'>
               <span className='text-xs font-normal text-white group-hover:text-yellow-500 flex gap-1 items-center justify-center'>
                 <FaEnvelope />
               </span> info@example.com
@@ -47,18 +47,17 @@ function MobileNav({ data, isOpen, setIsOpen }: any) {
             <ul className={`md:flex-row flex-col gap-5 absolute top-[170px] left-0 right-0 bg-white px-4 py-10 ${isOpen ? "flex" : "hidden"}`}>
               {data.map((item: any, idx: number) => (
                 <li key={idx}>
-                  <Link href="#" className='text-base font-medium text-black hover:text-yellow-500'>
+                  <Link href={item?.link} className='text-base font-medium text-black hover:text-yellow-500'>
                     {item?.title}
                   </Link>
                 </li>
               ))}
               <li>
-                <Link href="#" className='text-base font-medium text-white bg-yellow-500 hover:bg-black px-6 py-3'>
+                <Link href="/request-a-qoute" className='text-base font-medium text-white bg-yellow-500 hover:bg-black px-6 py-3'>
                   Book a Services
                 </Link>
               </li>
             </ul>
-
           </nav>
         </div>
       </div>
