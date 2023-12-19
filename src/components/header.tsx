@@ -107,7 +107,7 @@ export const data = [
   },
   {
     title: " Services",
-    link: '/'
+    link: '/services'
   },
   {
     title: "  iPhone Repair",
@@ -119,7 +119,7 @@ export const data = [
   },
   {
     title: "  Contact Us",
-    link: '/'
+    link: '/contact-us'
   },
 ]
 

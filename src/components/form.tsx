@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 function Form() {
     return (
-        <section className='py-16'>
+        <section className=''>
             <div className="relative h-[350px] bg-[url('/images/contact.jpg')] overflow-hidden bg-cover bg-center bg-no-repeat bg-blend-multiply bg-black/50 flex items-center justify-center">
             </div>
             <div className="container mx-auto px-6 md:px-8">
