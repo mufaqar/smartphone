@@ -67,68 +67,68 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <h5 className='text-xl font-semibold text-white Raleway'>
+          <h6 className='text-xl font-semibold text-white Raleway'>
             Quick Links
-          </h5>
+          </h6>
           <ul className='flex flex-col gap-3 mt-7'>
             <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                <FaChevronRight /> HOME
+              <Link href="/" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+                <FaChevronRight /> Home
               </Link>
             </li>
             <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                <FaChevronRight /> ABOUT US
+              <Link href="/about" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+                <FaChevronRight /> About us
               </Link>
             </li>
             <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                <FaChevronRight /> SERVICES
+              <Link href="/services" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+                <FaChevronRight /> Services
               </Link>
             </li>
             <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                <FaChevronRight /> PROJECTS
+              <Link href="/repairing" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+                <FaChevronRight /> iPhone Repair
               </Link>
             </li>
             <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                <FaChevronRight /> PRICING
+              <Link href="/blogs" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+                <FaChevronRight /> Blog
               </Link>
             </li>
             <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                <FaChevronRight /> CONTACT
+              <Link href="/contact-us" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+                <FaChevronRight /> Contact Us
               </Link>
             </li>
           </ul>
         </div>
         <div>
-          <h5 className='text-xl font-semibold text-white Raleway'>
+          <h6 className='text-xl font-semibold text-white Raleway'>
             Contact Info
-          </h5>
+          </h6>
           <ul className='flex flex-col gap-3 mt-7'>
             <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+              <span className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
                 <FaLocationDot className="text-yellow-500" /> 11 Deneside, Seghill",NE23
+              </span>
+            </li>
+            <li>
+              <Link href="tel:+64-7-3477044" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+                <FaPhoneAlt className="text-yellow-500" /> +64-7-3477044
               </Link>
             </li>
             <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                <FaPhoneAlt className="text-yellow-500" /> 0 (143) 456 7897
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                <FaEnvelope className="text-yellow-500" /> info@example.com
+              <Link href="mailto:info@smartphonesrepair" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+                <FaEnvelope className="text-yellow-500" /> info@smartphonesrepair
               </Link>
             </li>
           </ul>
         </div>
         <div>
-          <h5 className='text-xl font-semibold text-white Raleway'>
+          <h6 className='text-xl font-semibold text-white Raleway'>
             Get in touch
-          </h5>
+          </h6>
           <div>
             <form className='relative mt-7'>
               <input name='email' id='email' type='email' placeholder='Mail address'
@@ -140,27 +140,21 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className='bg-gray-900 py-5'>
+      <div className='bg-[#0b1a17] py-5'>
         <div className='container mx-auto px-4 items-center grid md:grid-cols-2 grid-cols-1 gap-7'>
-          <p className='text-base font-normal text-white'>
+          <p className='text-sm font-normal text-white'>
             Copyright © 2022. All Rights Reserved By CM-Repair
           </p>
           <ul className='flex flex-row justify-end gap-3 '>
             <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                HOME
+              <Link href="#" className='text-sm font-normal text-white hover:text-yellow-500 flex gap-1 items-center'>
+              Terms & Conditions
               </Link>
             </li>
             <li className='text-white'>|</li>
             <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                ABOUT US
-              </Link>
-            </li>
-            <li className='text-white'>|</li>
-            <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                SERVICES
+              <Link href="#" className='text-sm font-normal text-white hover:text-yellow-500 flex gap-1 items-center'>
+                Privacy Policies
               </Link>
             </li>
           </ul>
