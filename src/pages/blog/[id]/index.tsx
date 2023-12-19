@@ -42,7 +42,7 @@ const BlogsContent = ({ content, mainImage }) => {
   );
 };
 
-export async function getServerSideProps({ params }) {
+export async function getServerSideProps({ params }: { params: any }) {
   const id = params.id;
   const res = await client.fetch(`*[_type == "blogs" && slug.current == "${id}"]{content, mainImage}`);
   console.log('blogs:', res);

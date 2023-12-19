@@ -23,7 +23,7 @@ const ServicesContent = ({ content, mainImage }) => {
     );
 };
 
-export async function getServerSideProps({ params }) {
+export async function getServerSideProps({ params }: { params: any }) {
     const id = params.id;
     const res = await client.fetch(`*[_type == "services" && slug.current == "${id}"]{
     content,
