@@ -107,7 +107,7 @@ export const data = [
   },
   {
     title: " Services",
-    link: '/servicesdata'
+    link: '/services'
   },
   {
     title: "  iPhone Repair",

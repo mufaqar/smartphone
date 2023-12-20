@@ -3,9 +3,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from "framer-motion";
 import PageBanner from '@/components/page-banner';
+import SeoMeta from '@/components/seo';
 function index() {
   return (
     <>
+      <SeoMeta title="Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles" url="http://smartphonerapair.co.nz/about" />
+
       <PageBanner
         Custm_BG="bg-[url('/images/about.jpg')]"
         title="About Us" />

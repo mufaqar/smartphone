@@ -1,16 +1,16 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import Header from '@/components/header'
+
 import Hero from '@/components/hero/index'
 import Services from '@/components/services'
 import Facilities from '@/components/fscilities'
-import Blogs from './blogs'
 import Blog_Sec from '@/components/blogs'
-const inter = Inter({ subsets: ['latin'] })
+import SeoMeta from '@/components/seo'
 
 export default function Home() {
   return (
     <>
+    
+    <SeoMeta title="Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles" url="http://smartphonerapair.co.nz" />
+          
       <Hero />
       <Services />
       <Facilities />
