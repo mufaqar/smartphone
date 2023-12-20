@@ -13,7 +13,7 @@ function Footer() {
             <Image src="/images/logo.avif" alt="logo" width={907} height={285} className='md:w-1/2 w-full' />
           </Link>
           <p className='text-base font-normal text-white my-5 max-w-[350px]'>
-          Budget Computers and Kiwi Mobiles are a locally owned and operated store in Rotorua, New Zealand. They specialize in offering a wide range of budget-friendly computers, mobile phones, and related accessories. 
+            Budget Computers and Kiwi Mobiles are a locally owned and operated store in Rotorua, New Zealand. They specialize in offering a wide range of budget-friendly computers, mobile phones, and related accessories.
           </p>
           <ul className="flex gap-2">
             <li>
@@ -72,32 +72,28 @@ function Footer() {
           </h5>
           <ul className='flex flex-col gap-3 mt-7'>
             <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+              <Link href="/" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
                 <FaChevronRight /> HOME
               </Link>
             </li>
             <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+              <Link href="/about" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
                 <FaChevronRight /> ABOUT US
               </Link>
             </li>
             <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+              <Link href="/services" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
                 <FaChevronRight /> SERVICES
               </Link>
             </li>
+
             <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                <FaChevronRight /> PROJECTS
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+              <Link href="/request-a-qoute" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
                 <FaChevronRight /> PRICING
               </Link>
             </li>
             <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+              <Link href="/contact-us" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
                 <FaChevronRight /> CONTACT
               </Link>
             </li>
