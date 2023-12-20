@@ -13,7 +13,7 @@ function Footer() {
             <Image src="/images/logo.avif" alt="logo" width={907} height={285} className='md:w-1/2 w-full' />
           </Link>
           <p className='text-base font-normal text-white my-5 max-w-[350px]'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Budget Computers and Kiwi Mobiles are a locally owned and operated store in Rotorua, New Zealand. They specialize in offering a wide range of budget-friendly computers, mobile phones, and related accessories. 
           </p>
           <ul className="flex gap-2">
             <li>

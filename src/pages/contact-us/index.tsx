@@ -7,17 +7,13 @@ import { FaGlobeAfrica, FaMapMarkerAlt, FaPhoneAlt, FaRegEnvelope } from "react-
 function Contact_Us() {
     return (
         <>
-         <SeoMeta title="Contact Us | Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles" url="http://smartphonerapair.co.nz/contact-us" />
-      
+            <SeoMeta title="Contact Us | Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles" url="http://smartphonerapair.co.nz/contact-us" />
+
             <PageBanner
                 Custm_BG="bg-[url('/images/about.jpg')]"
                 title="Contact Us" />
-            <section className="mb-32">
-                <div className="relative h-[500px] overflow-hidden">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12552.233064615843!2d176.2507699974189!3d-38.1388381229038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6c277b70381649%3A0x193c03a4dd2ee1bd!2s1191%20Eruera%20Street%2C%20Rotorua%203010%2C%20New%20Zealand!5e0!3m2!1sen!2s!4v1702976204503!5m2!1sen!2s"
-                        className="left-0 top-0 h-full w-full" frameBorder={0}
-                        allowFullScreen></iframe>
-                </div>
+            <section className="mt-32 container mx-auto">
+
                 <div className="container px-6 md:px-12">
                     <div className="block rounded-lg bg-[hsla(0,0%,100%,0.7)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
                         <div className="mb-12 grid gap-x-6 md:grid-cols-2 lg:grid-cols-4">
@@ -103,6 +99,11 @@ function Contact_Us() {
                             </form>
                         </div>
                     </div>
+                </div>
+                <div className="relative h-[500px] overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12552.233064615843!2d176.2507699974189!3d-38.1388381229038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6c277b70381649%3A0x193c03a4dd2ee1bd!2s1191%20Eruera%20Street%2C%20Rotorua%203010%2C%20New%20Zealand!5e0!3m2!1sen!2s!4v1702976204503!5m2!1sen!2s"
+                        className="left-0 top-0 h-full w-full"
+                        allowFullScreen></iframe>
                 </div>
             </section>
         </>
