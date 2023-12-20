@@ -4,14 +4,14 @@ import React from 'react'
 import { client } from '../../../sanity/lib/client'
 import SeoMeta from '@/components/seo'
 
-function Services_Page({servicesdata}:any) {
+function Services_Page({ servicesdata }: any) {
     return (
         <>
-         <SeoMeta title="Our Servics | Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles" url="http://smartphonerapair.co.nz/contact-us" />
+            <SeoMeta title="Our Servics | Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles" url="http://smartphonerapair.co.nz/contact-us" />
             <PageBanner
                 Custm_BG="bg-[url('/images/about.jpg')]"
                 title="Services" />
-                <Services  data={servicesdata}/>
+            <Services data={servicesdata} />
         </>
     )
 }
