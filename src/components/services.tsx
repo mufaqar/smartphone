@@ -27,7 +27,7 @@ function Services({ data }: any) {
               duration: 1,
             }} className='grid md:grid-cols-4 grid-cols-1 gap-7 mt-10'>
 
-            {data.map((item: any, idx: number) => {
+            {data?.map((item: any, idx: number) => {
               return (
                 <div className='group shadow-lg' key={idx}>
                   <div className='bg-white relative'>

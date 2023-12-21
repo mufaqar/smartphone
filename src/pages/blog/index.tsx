@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 import Image from 'next/image';
 import { urlForImage } from '../../../sanity/lib/image'
 
-function Services({ blogsdata }) {
+function Services({ blogsdata }:any) {
   return (
     <section className='py-16'>
       <div className='container mx-auto px-4'>
         <h3 className='md:text-4xl text-3xl font-bold uppercase text-black text-center Raleway mb-7'>
-          Blogs
+          Latest Blog
         </h3>
       </div>
       <motion.div

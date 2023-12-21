@@ -6,7 +6,7 @@ import { FaPhone } from "react-icons/fa6";
 import { FcGlobe } from "react-icons/fc";
 import { motion } from "framer-motion";
 import { urlForImage } from '../../../../sanity/lib/image';
-const BlogsContent = ({ content, mainImage }) => {
+const BlogsContent = ({ content, mainImage }:any) => {
   return (
     <section className="container px-4 mx-auto bg-green-50 rounded-md mb-6">
       <div className="lg:flex pt-12 justify-between px-12 items-center">
