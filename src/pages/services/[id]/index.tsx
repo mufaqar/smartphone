@@ -13,7 +13,7 @@ const ServicesContent = ({ content, mainImage }: any) => {
             <PageBanner
                 Custm_BG="bg-[url('/images/about.jpg')]"
                 title="iPhone Repair" />
-            <section className="container px-4 mx-auto container px-4 mx-auto bg-green-50 rounded-md mb-6">
+            <section className=" container px-4 mx-auto bg-green-50 rounded-md mb-6">
 
                 <div className="font-[light] pb-12 ">
                     <div className="m-auto pt-8">
