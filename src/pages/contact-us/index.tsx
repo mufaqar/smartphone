@@ -7,7 +7,7 @@ import { FaGlobeAfrica, FaMapMarkerAlt, FaPhoneAlt, FaRegEnvelope } from "react-
 function Contact_Us() {
     return (
         <>
-            <SeoMeta title="Contact Us | Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles" url="http://smartphonerapair.co.nz/contact-us" />
+            <SeoMeta title="Contact Us | Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles" url="https://budgetrepaircenter.nz/contact-us" />
 
             <PageBanner
                 Custm_BG="bg-[url('/images/about.jpg')]"

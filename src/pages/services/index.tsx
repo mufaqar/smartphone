@@ -7,7 +7,7 @@ import SeoMeta from '@/components/seo'
 function Services_Page({ servicesdata }: any) {
     return (
         <>
-            <SeoMeta title="Our Servics | Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles" url="http://smartphonerapair.co.nz/contact-us" />
+            <SeoMeta title="Our Servics | Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles" url="https://budgetrepaircenter.nz/services" />
             <PageBanner
                 Custm_BG="bg-[url('/images/about.jpg')]"
                 title="Services" />

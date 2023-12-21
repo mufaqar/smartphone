@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
     
-    <SeoMeta title="Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles" url="http://smartphonerapair.co.nz" />
+    <SeoMeta title="Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles" url="https://budgetrepaircenter.nz" />
           
       <Hero />
       <Services />
