@@ -100,13 +100,13 @@ function Footer() {
           </h5>
           <ul className='flex flex-col gap-3 mt-7'>
             <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                <FaLocationDot className="text-yellow-500" /> 1191 ERUERA STREET ROTORUA,CBD,3010
+              <Link href="https://maps.app.goo.gl/cvf4g3iTCvLGAmzH8" target='_blank' className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+                <FaLocationDot className="text-yellow-500" /> 1191 Eruera Street Rotorua,cbd,3010
               </Link>
             </li>
             <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                <FaPhoneAlt className="text-yellow-500" /> 0 (143) 73477044
+              <Link href="tel:073477044" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+                <FaPhoneAlt className="text-yellow-500" /> 073 4770 44
               </Link>
             </li>
             <li>
