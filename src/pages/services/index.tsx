@@ -1,27 +1,28 @@
 import PageBanner from '@/components/page-banner'
 import Services from '@/components/services'
 import React from 'react'
+import {services} from '../../../sanity/lib/queries'
 import { client } from '../../../sanity/lib/client'
 import SeoMeta from '@/components/seo'
 
 function Services_Page({ servicesdata }: any) {
+    console.log('servicesdata', servicesdata)
     return (
         <>
-            <SeoMeta title="Our Servics | Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles" url="http://smartphonerapair.co.nz/contact-us" />
+            <SeoMeta title="Our Services" description="" url="http://smartphonerapair.co.nz/Services" />
             <PageBanner
-                Custm_BG="bg-[url('/images/about.jpg')]"
-                title="Services" />
+                Custm_BG="bg-[url('/images/repairing.avif')]"
+                title="Our Services" />
             <Services data={servicesdata} />
         </>
     )
 }
-
 export default Services_Page
 
 
 
 export async function getStaticProps() {
-    const servicesdata = await client.fetch(`*[_type == "services"]`);
+    const servicesdata = await client.fetch(services);
     return {
         props: {
             servicesdata,

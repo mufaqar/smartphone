@@ -18,7 +18,7 @@ function Footer() {
           <ul className="flex gap-2">
             <li>
               <Link
-                href="#!"
+                href="https://www.facebook.com/"
                 type="button"
                 className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-yellow-500 hover:border-yellow-500"
               >
@@ -34,7 +34,7 @@ function Footer() {
             </li>
             <li>
               <Link
-                href="#!"
+                href="https://twitter.com/"
                 type="button"
                 className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-yellow-500 hover:border-yellow-500"
               >
@@ -50,7 +50,7 @@ function Footer() {
             </li>
             <li>
               <Link
-                href="#!"
+                href="https://www.linkedin.com/"
                 type="button"
                 className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-yellow-500 hover:border-yellow-500"
               >
@@ -106,17 +106,17 @@ function Footer() {
           <ul className='flex flex-col gap-3 mt-7'>
             <li>
               <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                <FaLocationDot className="text-yellow-500" /> 11 Deneside, Seghill",NE23
+                <FaLocationDot className="text-yellow-500" /> 1191 ERUERA STREET ROTORUA,CBD,3010
               </Link>
             </li>
             <li>
               <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                <FaPhoneAlt className="text-yellow-500" /> 0 (143) 456 7897
+                <FaPhoneAlt className="text-yellow-500" /> 0 (143) 73477044
               </Link>
             </li>
             <li>
               <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                <FaEnvelope className="text-yellow-500" /> info@example.com
+                <FaEnvelope className="text-yellow-500" /> infobudgetrepairstore.nz
               </Link>
             </li>
           </ul>
@@ -142,20 +142,20 @@ function Footer() {
             Copyright © 2022. All Rights Reserved By CM-Repair
           </p>
           <ul className='flex flex-row justify-end gap-3 '>
-            <li>
+            <li className='list-none'>
               <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
                 HOME
               </Link>
             </li>
-            <li className='text-white'>|</li>
-            <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+            <li className='text-white list-none'>|</li>
+            <li className='list-none'>
+              <Link href="/about" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
                 ABOUT US
               </Link>
             </li>
-            <li className='text-white'>|</li>
-            <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+            <li className='text-white list-none'>|</li>
+            <li className='list-none'>
+              <Link href="/services" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
                 SERVICES
               </Link>
             </li>

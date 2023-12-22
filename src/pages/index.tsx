@@ -2,7 +2,7 @@
 import Hero from '@/components/hero/index'
 import Services from '@/components/services'
 import Facilities from '@/components/fscilities'
-import Blog_Sec from '@/components/blogs'
+import Blog_Sec from '../components/blogs'
 import SeoMeta from '@/components/seo'
 
 export default function Home() {

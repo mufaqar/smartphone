@@ -14,20 +14,20 @@ function Header() {
 
   return (
     <>
-      <header className='bg-white relative md:block hidden'>
+      <header className='bg-white relative md:block hidden' id='header'>
         <div className='bg-black py-3'>
           <div className='container mx-auto px-4'>
             <div className='flex justify-between items-center w-2/3 ml-auto'>
               <ul className='flex flex-row gap-3 justify-end items-center'>
-                <li className='group'>
+                <li className='group list-none'>
                   <span className='text-sm font-medium text-white group-hover:text-yellow-500 flex gap-1  items-center'>
                     <span className='text-base font-medium text-white group-hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border group-hover:border-yellow-500 items-center justify-center'>
                       <FaLocationDot />
                     </span> Mon - Friday: 9am to 5pm Saturday - Friday: 10am to 4pm
                   </span>
                 </li>
-                <li className='text-white'>|</li>
-                <li className='group'>
+                <li className='text-white list-none'>|</li>
+                <li className='group list-none'>
                   <Link href="#" className='text-sm font-medium text-white group-hover:text-yellow-500 flex gap-1  items-center'>
                     <span className='text-base font-medium text-white group-hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border group-hover:border-yellow-500 items-center justify-center'>
                       <FaPhoneAlt />
@@ -37,22 +37,22 @@ function Header() {
               </ul>
               <ul className='flex flex-row gap-3 justify-end'>
                 <li>
-                  <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border border-transparent hover:border-yellow-500 items-center justify-center'>
+                  <Link href="https://www.facebook.com/" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border border-transparent hover:border-yellow-500 items-center justify-center'>
                     <FaFacebookF />
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border border-transparent hover:border-yellow-500 items-center justify-center'>
+                  <Link href="https://twitter.com/" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border border-transparent hover:border-yellow-500 items-center justify-center'>
                     <FaTwitter />
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border border-transparent hover:border-yellow-500 items-center justify-center'>
+                  <Link href="https://www.linkedin.com/" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border border-transparent hover:border-yellow-500 items-center justify-center'>
                     <FaLinkedinIn />
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border border-transparent hover:border-yellow-500 items-center justify-center'>
+                  <Link href="https://www.instagram.com/" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border border-transparent hover:border-yellow-500 items-center justify-center'>
                     <FaInstagram />
                   </Link>
                 </li>
@@ -73,7 +73,7 @@ function Header() {
               <nav className='flex justify-between'>
                 <ul className='flex md:flex-row flex-col gap-5 justify-end'>
                   {data.map((item, idx) => (
-                    <li key={idx}>
+                    <li key={idx} className='list-none'>
                       <Link href={item?.link} className='text-base font-semibold text-white hover:text-yellow-500'>
                         {item?.title}
                       </Link>
@@ -82,7 +82,7 @@ function Header() {
                 </ul>
                 <div>
                   <Link href="/request-a-qoute" className='text-base font-semibold text-white bg-yellow-500 hover:bg-black px-6 py-3'>
-                    Book a Services
+                    Free Quote
                   </Link>
                 </div>
               </nav>

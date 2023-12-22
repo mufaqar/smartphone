@@ -27,6 +27,11 @@ export const services=defineType({
       },
     }),
     defineField({
+      name: 'icon',
+      title: 'Icon',
+      type: 'image',
+    }),
+    defineField({
             
         title: 'Content', 
         name: 'content',

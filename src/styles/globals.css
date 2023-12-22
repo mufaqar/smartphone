@@ -33,3 +33,34 @@
     left: -165px;
     z-index: 2;
 }
+
+ #servicesdata,h1,h2,h3,h4{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0px;
+ }
+ #servicesdata,p{
+    font-family: light;
+ }
+ #servicesdata,h5{
+    font-size: 20px;
+    font-weight: 200;
+    padding: 10px 0px; 
+ }
+#blogsdata,h1,h2,h3,h4{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0px;
+   color:#444444
+ }
+ #blogsdata,a{
+  color:#FFCB2E
+}
+ #blogsdata,p{
+    font-family: light;
+ }
+ #blogsdata,li{
+    font-family: light;
+    list-style-type: square;
+    list-style-position: inside;
+ }
