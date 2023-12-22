@@ -88,11 +88,6 @@ function Footer() {
             </li>
 
             <li>
-              <Link href="/request-a-qoute" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                <FaChevronRight /> PRICING
-              </Link>
-            </li>
-            <li>
               <Link href="/contact-us" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
                 <FaChevronRight /> CONTACT
               </Link>
@@ -115,8 +110,8 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                <FaEnvelope className="text-yellow-500" /> infobudgetrepairstore.nz
+              <Link href="mailto:info@budgetrepaircenter.nz" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+                <FaEnvelope className="text-yellow-500" /> info@budgetrepaircenter.nz
               </Link>
             </li>
           </ul>
