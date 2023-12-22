@@ -67,61 +67,61 @@ function Contact_Us() {
                                 <span className="block mx-auto mb-6 h-8 w-8 text-yellow-500">
                                     <FaPhoneAlt className="text-2xl" />
                                 </span>
-                                <Link href="tel:+64-7-3477044" className="text-base font-medium Raleway">
-                                    +64-7-3477044
+                                <Link href="tel:073477044" className="text-base font-medium Raleway">
+                                    073 4770 44
                                 </Link>
                             </div>
                             <div className="mx-auto text-center">
                                 <span className="block mx-auto mb-6 h-8 w-8 text-yellow-500">
                                     <FaRegEnvelope className="text-2xl" />
                                 </span>
-                                <Link href="mailto:conzadmin@smartphonesrepair.co.nz" className="text-base font-medium Raleway">
-                                    conzadmin@smartphonesrepair.co.nz.
+                                <Link href="mailto:info@budgetrepaircenter.nz" className="text-base font-medium Raleway">
+                                    info@budgetrepaircenter.nz
                                 </Link>
                             </div>
                         </div>
                         <div className="mx-auto max-w-[700px]">
 
-                        <form className="bg-white grid gap-5" onSubmit={handleSubmit(onSubmit)}>
-                        <h3 className="text-lg font-bold leading-7 pb-1 border-b">
-                            Get In Touch
-                        </h3>
-                        <div className="md:flex w-full gap-5 items-center">
-                            <div className="md:w-1/2 flex flex-col">
-                                <label className="text-base font-semibold leading-none hidden">Name</label>
-                                <input {...register("name", { required: true })} tabIndex={0} arial-label="Your Name" type="name" className="text-sm leading-none p-3 focus:outline-none focus:border-[#34A777] bg-transparent border rounded border-[#F0F0F0] text-[#777777] placeholder:text-[#777777]" placeholder="Your Name" />
-                                {errors.name && <span className='text-xs text-red-500'>This field is required</span>}
-                            </div>
-                            <div className="md:w-1/2 flex flex-col md:mt-0 mt-7">
-                                <label className="text-base font-semibold leading-none hidden">Email</label>
-                                <input {...register("email", { required: true })} type="email" className="text-sm leading-none p-3 focus:outline-none focus:border-[#34A777] bg-transparent border rounded border-[#F0F0F0] text-[#777777] placeholder:text-[#777777]" placeholder="E-mail address" />
-                                {errors.email && <span className='text-xs text-red-500'>This field is required</span>}
-                            </div>
-                        </div>
-                        <div className="md:flex w-full gap-5 items-center">
-                            <div className="md:w-1/2 flex flex-col">
-                                <label className="text-base font-semibold leading-none hidden">Telephone</label>
-                                <input {...register("phone")} type="tel" className="text-sm leading-none p-3 focus:outline-none focus:border-[#34A777] bg-transparent border rounded border-[#F0F0F0] text-[#777777] placeholder:text-[#777777]" placeholder="Telephone" />
-                                {errors.phone && <span className='text-xs text-red-500'>This field is required</span>}
-                            </div>
-                            <div className="md:w-1/2 flex flex-col md:mt-0 mt-7">
+                            <form className="bg-white grid gap-5" onSubmit={handleSubmit(onSubmit)}>
+                                <h3 className="text-lg font-bold leading-7 pb-1 border-b">
+                                    Get In Touch
+                                </h3>
+                                <div className="md:flex w-full gap-5 items-center">
+                                    <div className="md:w-1/2 flex flex-col">
+                                        <label className="text-base font-semibold leading-none hidden">Name</label>
+                                        <input {...register("name", { required: true })} tabIndex={0} arial-label="Your Name" type="name" className="text-sm leading-none p-3 focus:outline-none focus:border-[#34A777] bg-transparent border rounded border-[#F0F0F0] text-[#777777] placeholder:text-[#777777]" placeholder="Your Name" />
+                                        {errors.name && <span className='text-xs text-red-500'>This field is required</span>}
+                                    </div>
+                                    <div className="md:w-1/2 flex flex-col md:mt-0 mt-7">
+                                        <label className="text-base font-semibold leading-none hidden">Email</label>
+                                        <input {...register("email", { required: true })} type="email" className="text-sm leading-none p-3 focus:outline-none focus:border-[#34A777] bg-transparent border rounded border-[#F0F0F0] text-[#777777] placeholder:text-[#777777]" placeholder="E-mail address" />
+                                        {errors.email && <span className='text-xs text-red-500'>This field is required</span>}
+                                    </div>
+                                </div>
+                                <div className="md:flex w-full gap-5 items-center">
+                                    <div className="md:w-1/2 flex flex-col">
+                                        <label className="text-base font-semibold leading-none hidden">Telephone</label>
+                                        <input {...register("phone")} type="tel" className="text-sm leading-none p-3 focus:outline-none focus:border-[#34A777] bg-transparent border rounded border-[#F0F0F0] text-[#777777] placeholder:text-[#777777]" placeholder="Telephone" />
+                                        {errors.phone && <span className='text-xs text-red-500'>This field is required</span>}
+                                    </div>
+                                    <div className="md:w-1/2 flex flex-col md:mt-0 mt-7">
 
-                                <label className="text-base font-semibold leading-none hidden">Subject</label>
-                                <input {...register("subject", { required: true })} type="text" className="text-sm leading-none p-3 focus:outline-none focus:border-[#34A777] bg-transparent border rounded border-[#F0F0F0] text-[#777777] placeholder:text-[#777777]" placeholder="Subject" />
-                                {errors.subject && <span className='text-xs text-red-500'>This field is required</span>}
-                            </div>
-                        </div>
-                        <div className="w-full flex flex-col">
-                            <label className="text-base font-semibold leading-none hidden">Message</label>
-                            <textarea {...register("comment", { required: true })} tabIndex={0} aria-label="Write your message" role="textbox" className="text-sm leading-none p-3 focus:outline-none focus:border-[#34A777] bg-transparent border rounded border-[#F0F0F0] text-[#777777] placeholder:text-[#777777] resize-none h-32" defaultValue={"Write your message"} />
-                            {errors.comment && <span className='text-xs text-red-500'>This field is required</span>}
-                        </div>
-                        <div className="flex items-center justify-start w-full">
-                            <input type='submit' className="mt-5 text-base font-semibold leading-none text-white py-4 px-10 bg-[#89DBC4] hover:bg-[#34A777]" value={sending ? 'SENDING...' : `SUBMIT`} />
-                        </div>
-                    </form>
-                           
-                        
+                                        <label className="text-base font-semibold leading-none hidden">Subject</label>
+                                        <input {...register("subject", { required: true })} type="text" className="text-sm leading-none p-3 focus:outline-none focus:border-[#34A777] bg-transparent border rounded border-[#F0F0F0] text-[#777777] placeholder:text-[#777777]" placeholder="Subject" />
+                                        {errors.subject && <span className='text-xs text-red-500'>This field is required</span>}
+                                    </div>
+                                </div>
+                                <div className="w-full flex flex-col">
+                                    <label className="text-base font-semibold leading-none hidden">Message</label>
+                                    <textarea {...register("comment", { required: true })} tabIndex={0} aria-label="Write your message" role="textbox" className="text-sm leading-none p-3 focus:outline-none focus:border-[#34A777] bg-transparent border rounded border-[#F0F0F0] text-[#777777] placeholder:text-[#777777] resize-none h-32" defaultValue={"Write your message"} />
+                                    {errors.comment && <span className='text-xs text-red-500'>This field is required</span>}
+                                </div>
+                                <div className="flex items-center justify-start w-full">
+                                    <input type='submit' className="mt-5 text-base font-semibold leading-none text-white py-4 px-10 bg-[#89DBC4] hover:bg-[#34A777]" value={sending ? 'SENDING...' : `SUBMIT`} />
+                                </div>
+                            </form>
+
+
 
 
                         </div>
