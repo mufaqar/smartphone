@@ -116,11 +116,13 @@ function Footer() {
             </li>
             <li>
               <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                <FaEnvelope className="text-yellow-500" /> infobudgetrepairstore.nz
+                <FaEnvelope className="text-yellow-500" /> info@budgetrepairstore.nz
               </Link>
             </li>
           </ul>
         </div>
+
+        
         <div>
           <h5 className='text-xl font-semibold text-white Raleway'>
             Get in touch

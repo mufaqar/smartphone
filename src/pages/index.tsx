@@ -2,7 +2,7 @@
 import Hero from '@/components/hero/index'
 import Services from '@/components/services'
 import Facilities from '@/components/fscilities'
-import Blog_Sec from '../components/blogs'
+import Blog_Sec from '@/components/blogs'
 import SeoMeta from '@/components/seo'
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Facilities />
-      <Blog_Sec />
+      <Blog_Sec/>
     </>
   )
 }

@@ -1,8 +1,9 @@
+
 import PageBanner from '@/components/page-banner'
 import SeoMeta from '@/components/seo';
 import Link from 'next/link';
 import React, { useState } from 'react'
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm, SubmitHandler } from 'react-hook-form';
 
 import { FaGlobeAfrica, FaMapMarkerAlt, FaPhoneAlt, FaRegEnvelope } from "react-icons/fa";
 

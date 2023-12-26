@@ -97,14 +97,7 @@ function Blog_Sec() {
                                             <strong>Category </strong>:  <Link href="#"> {item.category}</Link>
                                         </p>
                                     </div>
-                                    <ul className='flex gap-3 justify-between items-end'>
-                                        <li className='flex items-center gap-2 text-yellow-500 text-base font-normal Raleway'>
-                                            <RiAdminFill /><span>Admin</span>
-                                        </li>
-                                        <li className='flex items-center gap-2 text-yellow-500 text-base font-normal Raleway'>
-                                            <MdOutlineDateRange /><span>3 Months Ago</span>
-                                        </li>
-                                    </ul>
+                                   
                                 </div>
                             </div>
                         )

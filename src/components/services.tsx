@@ -2,7 +2,6 @@ import Image from 'next/image'
 import React from 'react'
 import { motion } from "framer-motion";
 import Link from 'next/link';
-import { FaMobileAlt } from "react-icons/fa";
 import { urlForImage } from '../../sanity/lib/image';
 import SeoMeta from './seo';
 
