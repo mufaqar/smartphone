@@ -32,7 +32,7 @@ export default {
                 type: "object",
                 name: "inline",
                 fields: [
-                  { type: "image", name: "img" },
+                  { type: "image", name: "image" },
                   { type: "string", name: "link" }
                 ]
               }
@@ -47,7 +47,7 @@ export default {
                 type: "object",
                 name: "inline",
                 fields: [
-                  { type: "image", name: "img" },
+                  { type: "image", name: "image" },
                   { type: "string", name: "text" }
                 ]
               }
@@ -62,7 +62,7 @@ export default {
                 type: "object",
                 name: "inline",
                 fields: [
-                  { type: "image", name: "img" },
+                  { type: "image", name: "image" },
                   { type: "string", name: "link" }
                 ]
               }

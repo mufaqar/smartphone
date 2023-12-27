@@ -6,7 +6,7 @@ import { client } from '../../../sanity/lib/client'
 import SeoMeta from '@/components/seo'
 
 function Services_Page({ servicesdata }: any) {
-    console.log('servicesdata', servicesdata)
+ 
     return (
         <>
             <SeoMeta title="Our Services" description="" url="http://smartphonerapair.co.nz/Services" />
