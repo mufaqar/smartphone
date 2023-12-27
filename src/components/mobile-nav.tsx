@@ -41,19 +41,19 @@ function MobileNav({ data, isOpen, setIsOpen }: any) {
         </div>
         <div className='w-1/2 flex justify-end'>
           <nav>
-            <button onClick={() => setIsOpen(!isOpen)} className='text-3xl text-black'>
+            <button onClick={() => setIsOpen(!isOpen)} className='text-3xl  text-black '>
               {!isOpen ? <FaBars /> : <IoMdClose />}
             </button>
-            <ul className={`md:flex-row flex-col gap-5 absolute top-[170px] left-0 right-0 bg-white px-4 py-10 ${isOpen ? "flex" : "hidden"}`}>
-              {data.map((item: any, idx: number) => (
-                <li key={idx}>
+            <ul className={`md:flex-row flex-col gap-5 absolute top-[190px] left-0 right-0 bg-white px-4 py-10 ${isOpen ? "flex" : "hidden"}`}>
+              {data?.map((item: any, idx: number) => (
+                <li key={idx} className='list-none '>
                   <Link href="#" className='text-base font-medium text-black hover:text-yellow-500'>
-                    {item?.title}
+                    {item?.Name}
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link href="#" className='text-base font-medium text-white bg-yellow-500 hover:bg-black px-6 py-3'>
+              <li className ='list-none'>
+                <Link href="#" className=' list-none text-base font-medium text-white bg-yellow-500 hover:bg-black px-6 py-3'>
                   Book a Services
                 </Link>
               </li>

@@ -39,8 +39,8 @@ export default {
             ],
         },
         {
-          title: 'Socialicons2',
-          name: 'socialicons2',
+          title: 'Schedule',
+          name: 'schedule',
           type: 'array',
           of: [
               {
@@ -54,8 +54,24 @@ export default {
             ],
         },
         {
-          title: 'Footericons',
-          name: 'footericons',
+          title: 'Quicklinks',
+          name: 'quicklinks',
+          type: 'array',
+          of: [
+              {
+                type: "object",
+                name: "inline",
+                fields: [
+                  { type: "string", name: "title" },
+                  { type: "string", name: "link" }
+                ]
+              }
+            ],
+        },
+
+        {
+          title: 'Contact',
+          name: 'contact',
           type: 'array',
           of: [
               {

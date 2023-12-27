@@ -10,11 +10,10 @@ function Services({ data }: any) {
 
   return (
     <>
-
       <SeoMeta title="Our Servics | Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles" url="http://smartphonerapair.co.nz/contact-us" />
       <section className=' py-16' id='services'>
         <div className='container mx-auto px-4'>
-
+          
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -34,18 +33,15 @@ function Services({ data }: any) {
                     <Image src={urlForImage(item.mainImage).url()} alt={item.title} width={800} height={800} className='w-full max-h-[250px] ' />
 
                     <span className="text-yellow-600 group-hover:text-white bg-white   group-hover:bg-yellow-600 text-5xl flex items-center justify-center shadow-md absolute -bottom-8 left-1/2 -translate-x-1/2 p-1 w-20 h-20 rounded-full transition duration-300 ease-in-out">
-                    {item.icon && (
-      <img src={urlForImage(item.icon).url()} alt={item.title} width={225} height={200} className=' w-20 h-20' />
-      )}
+                      {item.icon && (
+                        <img src={urlForImage(item.icon).url()} alt={item.title} width={225} height={200} className=' w-20 h-20' />
+                      )}
                     </span>
                   </div>
                   <div className='bg-white py-10 px-5'>
                     <h3 className='text-xl font-bold text-center Raleway mb-5'>
                       {item.title}
                     </h3>
-                    {/* <p className='text-base font-normal text-center Raleway mb-5'>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit dolore magna aliqua.
-                  </p> */}
                     <Link href={`/services/${item.slug.current}`} className='block text-base font-semibold text-white Raleway bg-yellow-600 group-hover:bg-white group-hover:text-yellow-600 border-2 border-yellow-600 px-6 py-1.5 w-fit mx-auto transition duration-300 ease-in-out'>
                       Read more
                     </Link>

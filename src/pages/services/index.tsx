@@ -5,7 +5,7 @@ import {services} from '../../../sanity/lib/queries'
 import { client } from '../../../sanity/lib/client'
 import SeoMeta from '@/components/seo'
 
-function Services_Page({ servicesdata }: any) {
+function Services_Page({ servicesdata  }: any) {
  
     return (
         <>
