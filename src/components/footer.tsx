@@ -30,7 +30,7 @@ function Footer() {
 
           </Link>
           <p className='text-base font-normal text-white my-5 max-w-[350px]'>
-            Budget Computers and Kiwi Mobiles are a locally owned and operated store in Rotorua, New Zealand. They specialize in offering a wide range of budget-friendly computers, mobile phones, and related accessories.
+           {siteSettings?.about}
           </p>
           <ul className="flex gap-2">
           {siteSettings?.socialicons?.map((item: any, idx: number) => {
@@ -102,23 +102,19 @@ function Footer() {
             Copyright © 2022. All Rights Reserved By CM-Repair
           </p>
           <ul className='flex flex-row justify-end gap-3 '>
-            <li className='list-none'>
-              <Link href="#" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                HOME
+    
+            {siteSettings?.quicklinks?.slice(0, 3).map((item: any, idx: number) => {
+                  return (
+                    <>
+                    <li key={idx} className='text-white list-none'>|</li>
+                    <li className='list-none'>
+              <Link href={item.link} className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
+               {item.title}
               </Link>
             </li>
-            <li className='text-white list-none'>|</li>
-            <li className='list-none'>
-              <Link href="/about" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                ABOUT US
-              </Link>
-            </li>
-            <li className='text-white list-none'>|</li>
-            <li className='list-none'>
-              <Link href="/services" className='text-base font-normal text-white hover:text-yellow-500 flex gap-1  items-center'>
-                SERVICES
-              </Link>
-            </li>
+            </>
+             )
+            })}
           </ul>
         </div>
       </div>

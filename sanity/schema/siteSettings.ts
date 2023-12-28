@@ -24,6 +24,11 @@ export default {
           type: "image"
         },
         {
+          title: 'About',
+          name: 'about',
+          type: 'text'
+        },
+        {
           title: 'Socialicons',
           name: 'socialicons',
           type: 'array',

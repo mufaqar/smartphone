@@ -12,6 +12,7 @@ export default async function handler(req, res) {
           url
         }
       },
+      about ,
       socialicons,
       schedule,
       quicklinks,

@@ -31,6 +31,7 @@ function Facilities() {
 
             </div>
           </div>
+          <h1 className='text-center font-bold text-5xl m-16 underline  underline-offset-8 decoration-2 decoration-blue-600 '>OUR FACILITIES</h1>
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -41,15 +42,16 @@ function Facilities() {
               opacity: { duration: 1 },
               ease: "easeIn",
               duration: 1,
-            }} className='grid md:grid-cols-4 grid-cols-1 md:gap-0 gap-7 mt-12'>
+            }} className='grid md:grid-cols-4 grid-cols-1 md:gap-4 gap-7 mt-12 cursor-pointer '>
             {Services_Data.map((item, idx) => {
               return (
-                <div key={idx} className="text-center md:px-0 px-8 duration-300 bg-white hover:bg-yellow-500 group py-5 shadow-[0px_0px_15px_0px_rgb(0,0,0,32%)]">
-                  <div className="mx-auto flex h-16 w-16 mb-5 items-center justify-center group-hover:bg-black rounded-full bg-stone-100">
-                    <span className='text-3xl text-black group-hover:text-white'>
+                <div key={idx} className="text-center md:px-0 px-8 relative duration-300 bg-white hover:bg-yellow-500 group  shadow-[0px_0px_15px_0px_rgb(0,0,0,32%)]">
+                  <div className="mx-auto  relative bottom-8   flex h-16 w-16 items-center justify-center group-hover:bg-black rounded-full bg-blue-100">
+                    <span className='  text-3xl text-black group-hover:text-white'>
                       {item.icon}
                     </span>
                   </div>
+
                   <h4 className='text-black group-hover:text-white mb-3 text-lg font-bold lg:px-14 Raleway'>
                     {item.title}
                   </h4>

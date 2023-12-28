@@ -13,7 +13,7 @@ function Services({ data }: any) {
       <SeoMeta title="Our Servics | Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles" url="http://smartphonerapair.co.nz/contact-us" />
       <section className=' py-16' id='services'>
         <div className='container mx-auto px-4'>
-          
+          <h1 className='text-center font-bold text-5xl'>OUR SERVICES</h1>
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
