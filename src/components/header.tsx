@@ -34,7 +34,7 @@ function Header() {
                     <li key={idx} className='group list-none'>
                       <span className='text-sm font-medium text-white group-hover:text-yellow-500 flex gap-1  items-center'>
                         <span className='text-base font-medium  group-hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border group-hover:border-yellow-500 items-center justify-center'>
-                          <img src={urlForImage(item.image).url()} alt={item.image} width={800} height={800}  className='h-6 w-6' />
+                          <img src={urlForImage(item.image).url()} alt={item.image} width={800} height={800} className='h-6 w-6' />
                         </span> {item.text}
                       </span>
                     </li>
@@ -46,7 +46,7 @@ function Header() {
                   return (
                     <li key={idx}>
                       <Link href={item?.link} className='text-base font-normal   flex  w-8 h-8 bg-transparent   border-2 border-transparent rounded-full  hover:border-yellow-700 items-center justify-center'>
-                        <img src={urlForImage(item.image).url()} alt={item.title} width={800} height={800}  className=' rounded-full w-5 h-5 '  />
+                        <img src={urlForImage(item.image).url()} alt={item.title} width={800} height={800} className=' rounded-full w-5 h-5 ' />
                       </Link>
                     </li>
                   )
@@ -60,11 +60,9 @@ function Header() {
             <div className='w-2/3 ml-auto'>
               <div className='absolute top-0 left-0 w-1/3 h-full flex items-center justify-center shape'>
                 <div>
-                
                   <Link href="/">
-           
-                    <Image src={siteSettings?.logo?.asset?.url} alt={`logo`} width={800} height={800}  className='md:w-1/2 w-full mx-auto relative z-50' />
-                </Link>
+                    <Image src="/logo.png" alt={`logo`} width={800} height={260} className='md:w-1/2 w-full mx-auto relative z-50' />
+                  </Link>
                 </div>
               </div>
               <nav className='flex justify-between'>
@@ -88,7 +86,7 @@ function Header() {
         </div>
       </header>
       <MobileNav data={siteSettings?.headerNav} isOpen={isOpen} setIsOpen={setIsOpen} />
-     
+
     </>
   );
 }

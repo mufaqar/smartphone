@@ -27,7 +27,7 @@ function index() {
                         duration: 3,
                     }} className='text-left px-4 pb-16  '>
                     <h2 className='font-bold Raleway text-2xl pt-6 pb-8 text-[#444444]'>iPhone, iPad and MacBook Repair</h2>
-                    <Link href={'/'} className='text-amber-500 font-normal text-base hover:text-slate-900 duration-500 '>Get an Online Quote</Link>
+                    <Link href={'/request-a-qoute'} className='text-amber-500 font-normal text-base hover:text-slate-900 duration-500 bg-yellow-500 '>Get an Online Quote</Link>
                     <div className='lg:flex lg:space-x-16 '>
                         <div className='pt-6'>
                             <h2 className='font-bold text-2xl pt-6 pb-4 text-[#444444]'>iPhone, iPad and MacBook Repair</h2>
