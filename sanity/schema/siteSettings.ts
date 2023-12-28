@@ -3,6 +3,12 @@ export default {
   title: 'Site Settings',
   type: 'document',
   fields: [
+    {
+      title: 'Navigation',
+      name: 'title',
+      type: 'string',
+      hidden: true,
+    },
       {
           title: 'Header Nav',
           name: 'headerNav',
