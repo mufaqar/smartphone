@@ -93,6 +93,20 @@ function Footer() {
                 <FaChevronRight />
               </button>
             </form>
+            <ul className='flex flex-col gap-4 mt-6'>
+                {siteSettings?.schedule?.map((item: any, idx: number) => {
+                  return (
+                    <li key={idx} className='group list-none flex gap-2 items-center'>
+                      <div className=''>
+                        <figure className='text-base font-medium  group-hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border group-hover:border-yellow-500 items-center justify-center'>
+                          <img src={urlForImage(item.image).url()} alt={item.image} width={800} height={800} className='h-6 w-6' />
+                        </figure>
+                      </div>
+                      <p className='text-sm font-medium text-white group-hover:text-yellow-500 gap-1  items-center'>{item.text}</p>
+                    </li>
+                  )
+                })}
+              </ul>
           </div>
         </div>
       </div>

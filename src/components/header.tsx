@@ -3,11 +3,14 @@ import Link from 'next/link';
 import { urlForImage } from '../../sanity/lib/image'
 import Image from 'next/image';
 import MobileNav from './mobile-nav';
+import TextTransition, { presets } from 'react-text-transition';
+
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [siteSettings, setSiteSettings] = useState<any>();
-  console.log('siteSettings', siteSettings);
+  const [index, setIndex] = React.useState(0);
 
+  const TEXTS = ['Hi-Tech lab we are specialized in any kind of motherboard repairs!', 'Hi-Tech lab we are specialized in any kind of motherboard repairs.'];
 
   useEffect(() => {
     const fetchData = async () => {
@@ -22,25 +25,23 @@ function Header() {
     fetchData();
   }, []);
 
+  React.useEffect(() => {
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      3000, // every 3 seconds
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
+
   return (
     <>
       <header className='bg-white relative md:block hidden' id='header'>
         <div className='bg-black py-3'>
           <div className='container mx-auto px-4'>
             <div className='flex justify-between  items-center w-2/3 ml-auto'>
-              <ul className='flex flex-row gap-3 justify-end  items-center'>
-                {siteSettings?.schedule?.map((item: any, idx: number) => {
-                  return (
-                    <li key={idx} className='group list-none'>
-                      <span className='text-sm font-medium text-white group-hover:text-yellow-500 flex gap-1  items-center'>
-                        <span className='text-base font-medium  group-hover:text-yellow-500 flex gap-1 w-8 h-8 bg-transparent rounded-full border group-hover:border-yellow-500 items-center justify-center'>
-                          <img src={urlForImage(item.image).url()} alt={item.image} width={800} height={800} className='h-6 w-6' />
-                        </span> {item.text}
-                      </span>
-                    </li>
-                  )
-                })}
-              </ul>
+              <div className='text-white'>
+                <TextTransition inline={true} springConfig={presets.wobbly}>{TEXTS[index % TEXTS.length]}</TextTransition>
+              </div>
               <ul className='flex flex-row gap-3 justify-end lg:-mt-6'>
                 {siteSettings?.socialicons?.map((item: any, idx: number) => {
                   return (
