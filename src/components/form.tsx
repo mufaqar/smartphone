@@ -108,8 +108,8 @@ function Form() {
                                         <p className="mb-1 font-bold ">
                                             Send a mail
                                         </p>
-                                        <Link href="#" className="text-sm text-black">
-                                            info@smartphonesrepair.
+                                        <Link href="mailto:info@budgetrepaircenter.nz" className="text-sm text-black">
+                                            info@budgetrepaircenter.nz
                                         </Link>
                                     </div>
                                 </motion.div>
@@ -156,8 +156,8 @@ function Form() {
                                         <p className="mb-1 font-bold ">
                                             Technical support
                                         </p>
-                                        <Link href="#" className="text-sm text-black">
-                                            conzadmin@smartphonesrepair.co.nz
+                                        <Link href="mailto:tech@budgetrepaircenter.nz" className="text-sm text-black">
+                                            tech@budgetrepaircenter.nz
                                         </Link>
                                     </div>
                                 </motion.div>
@@ -202,7 +202,7 @@ export const data = [
         icon: <IoLocation />,
     },
     {
-        title: "info@smartphonesrepair. <br/> conzadmin@smartphonesrepair.co.nz",
+        title: "info@budgetrepaircenter.nz. <br/> conzadmin@budgetrepaircenter.nz.co.nz",
         icon: <PiCardholder />,
     },
     {
