@@ -58,8 +58,8 @@ function Facilities() {
                   <p className='text-black group-hover:text-white mb-3 text-base font-bold lg:px-14 Raleway'>
                     {item?.info}
                   </p>
-                  <Link href="" className='text-lg font-semibold text-white Raleway bg-yellow-500 hover:bg-black hover:text-yellow-500 border-2 border-yellow-500 hover:border-white px-10 py-2.5 w-fit transition duration-300 ease-in-out'>
-                      {item?.link_title}
+                  <Link href="https://jobform.budgetrepaircenter.nz/search" target='_blank' className='text-lg font-semibold text-white Raleway bg-yellow-500 hover:bg-black hover:text-yellow-500 border-2 border-yellow-500 hover:border-white px-10 py-2.5 w-fit transition duration-300 ease-in-out'>
+                    {item?.link_title}
                   </Link>
 
                 </div>
