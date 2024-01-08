@@ -1,8 +1,8 @@
 import React from 'react'
-import { MdOutlineSettingsSuggest } from "react-icons/md";
-import { SiFiles } from "react-icons/si";
-import { TiPower } from "react-icons/ti";
-import { FaCar } from "react-icons/fa6";
+import { MdOutlineContentPasteSearch, MdPayments } from "react-icons/md";
+import { SiMinutemailer } from "react-icons/si";
+import { GrSystem } from "react-icons/gr";
+
 import Form from './form';
 import Link from 'next/link';
 import { motion } from "framer-motion";
@@ -31,7 +31,7 @@ function Facilities() {
 
             </div>
           </div>
-          <h1 className='text-center font-bold text-5xl m-16 underline  underline-offset-8 decoration-2 decoration-blue-600 '>OUR FACILITIES</h1>
+          <h1 className='text-center font-bold text-5xl m-16 underline  underline-offset-8 decoration-2 decoration-blue-600 '>Our Process</h1>
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -45,16 +45,22 @@ function Facilities() {
             }} className='grid md:grid-cols-4 grid-cols-1 md:gap-4 gap-7 mt-12 cursor-pointer '>
             {Services_Data.map((item, idx) => {
               return (
-                <div key={idx} className="text-center md:px-0 px-8 relative duration-300 bg-white hover:bg-yellow-500 group  shadow-[0px_0px_15px_0px_rgb(0,0,0,32%)]">
+                <div key={idx} className="text-center md:px-0 px-8 relative duration-300 bg-white shadow-[0px_0px_15px_0px_rgb(0,0,0,32%)]">
                   <div className="mx-auto  relative bottom-8   flex h-16 w-16 items-center justify-center group-hover:bg-black rounded-full bg-blue-100">
                     <span className='  text-3xl text-black group-hover:text-white'>
                       {item.icon}
                     </span>
                   </div>
 
-                  <h4 className='text-black group-hover:text-white mb-3 text-lg font-bold lg:px-14 Raleway'>
+                  <h3 className='text-black group-hover:text-white mb-3 text-xl font-bold lg:px-14 Raleway'>
                     {item.title}
-                  </h4>
+                  </h3>
+                  <p className='text-black group-hover:text-white mb-3 text-base font-bold lg:px-14 Raleway'>
+                    {item?.info}
+                  </p>
+                  <Link href="" className='text-lg font-semibold text-white Raleway bg-yellow-500 hover:bg-black hover:text-yellow-500 border-2 border-yellow-500 hover:border-white px-10 py-2.5 w-fit transition duration-300 ease-in-out'>
+                      {item?.link_title}
+                  </Link>
 
                 </div>
               );
@@ -73,24 +79,37 @@ export default Facilities
 
 export const Services_Data = [
   {
-    title: "Expert Xbox Repair Services: Repairs Xbox: Rotorua",
+    title: "Repair Cost Search",
+    icon: <MdOutlineContentPasteSearch />,
+    info: "view price by models, laptops, smartphones, xbox, play stations",
+    link_title: "Search Now",
+    link: "https://jobform.budgetrepaircenter.nz/search"
+  },
 
-    icon: <MdOutlineSettingsSuggest />,
+  {
+    title: "Agent Portal",
+    icon: <GrSystem />,
+    info: "Portal where agent can create tickets , get exact price and Qoutation about any product and check orders free",
+    link_title: "Create Ticket",
+    link: "https://jobform.budgetrepaircenter.nz/agent-dashboard"
   },
   {
-    title: "Fast and Reliable iPhone Repair Rotorua",
+    title: "Send  & Pay",
+    icon: <MdPayments />,
+    info: "You will send us your product and pay us | Relax! Our expert will fix the device  ",
+    link_title: "Send your devide",
+    link: "https://jobform.budgetrepaircenter.nz/agent-dashboard"
 
-    icon: <TiPower />,
+
   },
   {
-    title: "CLICK TO FIND FREE QUOTES  ",
+    title: "Receive You Product",
+    icon: <SiMinutemailer />,
+    info: "Portal where techincal will reply on ticket with in 24 hours",
+    link_title: "Get Your Device",
+    link: "https://jobform.budgetrepaircenter.nz/agent-dashboard"
 
-    icon: <FaCar />,
-  },
-  {
-    title: "COMPUTERS REPAIR SERVICES",
 
-    icon: <SiFiles />,
   },
 
 
