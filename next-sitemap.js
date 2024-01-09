@@ -12,6 +12,8 @@ const minutes = String(now.getMinutes()).padStart(2, '0');
 const seconds = String(now.getSeconds()).padStart(2, '0');
 const formattedDateTime = `${year}-${month}-${day}T${hours}:${minutes}:${seconds}+00:00`;
 
+
+
 const config = {
      projectId: "g4zoa46z",
      dataset: "production",
@@ -73,7 +75,7 @@ async function generateSitemap() {
           (item) => `
         <url>
           <loc>${SITE_URL}/blog/${item.slug}</loc>
-          <lastmod>${item._updatedAt}</lastmod>
+          <lastmod>${formattedDateTime}</lastmod>
           <priority>1.00</priority>
         </url>
        `).join("")}
@@ -82,7 +84,7 @@ async function generateSitemap() {
             (item) => `
           <url>
             <loc>${SITE_URL}/services/${item.slug}</loc>
-            <lastmod>${item._updatedAt}</lastmod>
+            <lastmod>${formattedDateTime}</lastmod>
             <priority>1.00</priority>
           </url>
          `).join("")}
