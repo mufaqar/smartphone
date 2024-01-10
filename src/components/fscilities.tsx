@@ -24,7 +24,7 @@ function Facilities() {
                 <p className='text-lg font-medium text-black mb-5'>
                   Budget Computers and Kiwi Mobiles are a locally owned and operated store in Rotorua, New Zealand. They specialize in offering a wide range of budget-friendly computers, mobile phones, and related accessories. The store is known for its customer care and personalised services, helping customers find the best products according to their needs while staying within their budget. Budget Computers and Kiwi Mobiles staff members have extensive knowledge of the products they sell, ensuring that customers receive quality support and assistance
                 </p>
-                <Link href="#" className='block text-lg font-semibold text-white Raleway bg-yellow-500 hover:bg-white hover:text-yellow-500 border-2 border-yellow-500 hover:border-white px-10 py-2.5 w-fit transition duration-300 ease-in-out'>
+                <Link href="/about" className='block text-lg font-semibold text-white Raleway bg-yellow-500 hover:bg-white hover:text-yellow-500 border-2 border-yellow-500 hover:border-white px-10 py-2.5 w-fit transition duration-300 ease-in-out'>
                   For more visit us.
                 </Link>
               </div>
@@ -97,13 +97,13 @@ export const Services_Data = [
     title: "Send  & Pay",
     icon: <MdPayments />,
     info: "You will send us your product and pay us | Relax! Our expert will fix the device  ",
-    link_title: "Send your devide",
+    link_title: "Send your Device",
     link: "https://jobform.budgetrepaircenter.nz/agent-dashboard"
 
 
   },
   {
-    title: "Receive You Product",
+    title: "Receive You Device",
     icon: <SiMinutemailer />,
     info: "Portal where techincal will reply on ticket with in 24 hours",
     link_title: "Get Your Device",

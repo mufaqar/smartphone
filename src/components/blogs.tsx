@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import React from 'react'
-
 import { urlForImage } from '../../sanity/lib/image'
 
 import Image from 'next/image'
@@ -9,7 +8,7 @@ import Image from 'next/image'
 function Blog_Sec({ data }: any) {
     return (
         <section className='py-16' id='blogsdata'>
-            <h1 className='text-center font-bold text-5xl'>Latest Blogs</h1>
+            <h1 className='text-center font-bold text-5xl'>Latest Blog</h1>
             <motion.div
                 initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
