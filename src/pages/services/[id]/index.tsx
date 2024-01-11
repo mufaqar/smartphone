@@ -13,7 +13,7 @@ const ServicesContent = ({ content, mainImage ,icon,title }: any) => {
     return (
         <>
             <SeoMeta
-                title={title} description="" url="http://smartphonerapair.co.nz/Services" />
+                title={title} description="" url="https://budgetrepaircenter.nz/Services" />
 
             <PageBanner
                 Custm_BG="bg-[url('/images/repairing.avif')]"

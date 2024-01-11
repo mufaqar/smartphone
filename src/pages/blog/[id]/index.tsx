@@ -8,7 +8,7 @@ const BlogsContent = ({ content, mainImage, title }: any) => {
   return (
     <>
       <SeoMeta
-        title={title} description="Latest Blogs" url="http://smartphonerapair.co.nz/blogs" />
+        title={title} description="Latest Blogs" url="https://budgetrepaircenter.nz/blogs" />
 
       <PageBanner
         Custm_BG="bg-[url('/images/about.jpg')]"

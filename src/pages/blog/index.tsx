@@ -8,7 +8,7 @@ function Blogs({ blogsdata }: any) {
   return (
     <>
       <SeoMeta
-        title="Latest News and Blog | Budget Computers and Kiwi Mobiles" description="Latest News about computers, mobile phones, and related accessories. We have awesome news about new technology " url="http://smartphonerapair.co.nz/blog" />
+        title="Latest News and Blog | Budget Computers and Kiwi Mobiles" description="Latest News about computers, mobile phones, and related accessories. We have awesome news about new technology " url="https://budgetrepaircenter.nz/blog" />
 
       <PageBanner
         Custm_BG="bg-[url('/images/about.jpg')]"

@@ -7,7 +7,7 @@ import SeoMeta from '@/components/seo';
 function index() {
   return (
     <>
-      <SeoMeta title="About Us | Budget Computers and Kiwi Mobiles" description="We are locally owned and operated store in Rotorua, New Zealand,helping customers find the best products according to their needs" url="http://smartphonerapair.co.nz/about" />
+      <SeoMeta title="About Us | Budget Computers and Kiwi Mobiles" description="We are locally owned and operated store in Rotorua, New Zealand,helping customers find the best products according to their needs" url="https://budgetrepaircenter.nz/about" />
 
       <PageBanner
         Custm_BG="bg-[url('/images/about.jpg')]"

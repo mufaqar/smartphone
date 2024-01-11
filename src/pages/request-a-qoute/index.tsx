@@ -6,7 +6,7 @@ function Request_Qoute() {
     return (
         <div>
             <SeoMeta
-                title="Request a Free Quote | Budget Computers and Kiwi Mobiles" description="Request a Free Quote about computers, mobile phones, and related accessories" url="http://smartphonerapair.co.nz/request-a-qoute" />
+                title="Request a Free Quote | Budget Computers and Kiwi Mobiles" description="Request a Free Quote about computers, mobile phones, and related accessories" url="https://budgetrepaircenter.nz/request-a-qoute" />
 
             <Form />
         </div>
