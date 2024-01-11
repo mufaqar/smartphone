@@ -12,7 +12,7 @@ export default function Home({ servicesdata, blogsdata }: any) {
   return (
     <>
 
-      <SeoMeta title="Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles" url="https://budgetrepaircenter.nz" />
+      <SeoMeta title="Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles are a locally owned and operated store in Rotorua, New Zealand. We specialize in offering a wide range of budget-friendly computers, mobile phones, and related accessories" url="https://budgetrepaircenter.nz" />
       <Hero />
       <Services data={servicesdata} />
       <Facilities />

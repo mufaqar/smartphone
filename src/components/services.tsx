@@ -4,13 +4,12 @@ import { motion } from "framer-motion";
 import Link from 'next/link';
 import { FaMobileAlt } from "react-icons/fa";
 import { urlForImage } from '../../sanity/lib/image';
-import SeoMeta from './seo';
+
 
 function Services({ data }: any) {
 
   return (
     <>
-      <SeoMeta title="Our Servics | Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles" url="http://smartphonerapair.co.nz/contact-us" />
       <section className=' py-16' id='services'>
         <div className='container mx-auto px-4'>
           <h1 className='text-center font-bold text-5xl'>OUR SERVICES</h1>
