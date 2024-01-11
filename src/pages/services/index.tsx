@@ -9,7 +9,7 @@ function Services_Page({ servicesdata  }: any) {
  
     return (
         <>
-            <SeoMeta title="Our Services" description="" url="http://smartphonerapair.co.nz/Services" />
+            <SeoMeta title="Our Services | Budget Computers and Kiwi Mobiles" description="We offering a wide range of budget-friendly computers, mobile phones, and related accessories." url="http://smartphonerapair.co.nz/services" />
             <PageBanner
                 Custm_BG="bg-[url('/images/repairing.avif')]"
                 title="Our Services" />

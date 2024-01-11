@@ -37,8 +37,7 @@ function Contact_Us() {
     }
     return (
         <>
-            <SeoMeta title="Contact Us | Budget Computers and Kiwi Mobiles" description="Budget Computers and Kiwi Mobiles" url="https://budgetrepaircenter.nz/contact-us" />
-
+            <SeoMeta title="Contact Us | Budget Computers and Kiwi Mobiles" description="Get in touch with us! Whether you have questions, feedback, or inquiries, our dedicated team is here to assist you." url="https://budgetrepaircenter.nz/contact-us" />
             <PageBanner
                 Custm_BG="bg-[url('/images/about.jpg')]"
                 title="Contact Us" />

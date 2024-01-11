@@ -21,7 +21,7 @@ export default function Home({ servicesdata, blogsdata }: any) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const servicesdata = await client.fetch(services);
   const blogsdata = await client.fetch(blogs);
   return {

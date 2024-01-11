@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
-import Link from 'next/link';
 import { client } from '../../../sanity/lib/client'
-import { motion } from "framer-motion";
 import {blogs} from '../../../sanity/lib/queries'
-import { urlForImage } from '../../../sanity/lib/image'
 import PageBanner from "@/components/page-banner";
 import SeoMeta from "@/components/seo";
 import Blog_Sec from '@/components/blogs'
@@ -11,11 +8,11 @@ function Blogs({ blogsdata }: any) {
   return (
     <>
       <SeoMeta
-        title={'Latest Blogs'} description="Latest Blogs" url="http://smartphonerapair.co.nz/blogs" />
+        title="Latest News and Blog | Budget Computers and Kiwi Mobiles" description="Latest News about computers, mobile phones, and related accessories. We have awesome news about new technology " url="http://smartphonerapair.co.nz/blog" />
 
       <PageBanner
         Custm_BG="bg-[url('/images/about.jpg')]"
-        title={'Latest Blogs'} />
+        title={'Latest News '} />
 
 <Blog_Sec data={blogsdata} />
 
@@ -24,7 +21,7 @@ function Blogs({ blogsdata }: any) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const blogsdata = await client.fetch(blogs);
   return {
     props: {
