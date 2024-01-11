@@ -3,12 +3,12 @@ import { client } from '../../../../sanity/lib/client'
 import PageBanner from "@/components/page-banner";
 import SeoMeta from "@/components/seo";
 import { urlForImage } from '../../../../sanity/lib/image';
-const BlogsContent = ({ content, mainImage, title }: any) => {
-  console.log(title)
+const BlogsContent = ({ content, mainImage, title, slug }: any) => {
+
   return (
     <>
       <SeoMeta
-        title={title} description="Latest Blogs" url="https://budgetrepaircenter.nz/blogs" />
+        title={title} description={`${title} | Latest News About computers, mobile phones, and related accessories.`} url={`https://budgetrepaircenter.nz/blog/${slug}`} />
 
       <PageBanner
         Custm_BG="bg-[url('/images/about.jpg')]"
@@ -45,13 +45,13 @@ const BlogsContent = ({ content, mainImage, title }: any) => {
 export async function getServerSideProps({ params }: { params: any }) {
   const id = params.id;
   const res = await client.fetch(`*[_type == "blogs" && slug.current == "${id}"]{content, mainImage , title}`);
-  console.log('blogs:', res);
 
   return {
     props: {
       content: res[0]?.content || null,// Use optional chaining to handle undefined
       mainImage: res[0]?.mainImage || null,
       title: res[0]?.title || null,
+      slug: id
     },
   };
 }
