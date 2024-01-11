@@ -1,8 +1,8 @@
-const { createClient } = require("@sanity/client");
-const fs = require("fs");
+const { createClient } = require('@sanity/client');
+const fs = require('fs');
 // import {createClient} from '@sanity/client'
 
-// generate Time 
+// generate Time
 const now = new Date();
 const year = now.getFullYear();
 const month = String(now.getMonth() + 1).padStart(2, '0');
@@ -12,16 +12,14 @@ const minutes = String(now.getMinutes()).padStart(2, '0');
 const seconds = String(now.getSeconds()).padStart(2, '0');
 const formattedDateTime = `${year}-${month}-${day}T${hours}:${minutes}:${seconds}+00:00`;
 
-
-
 const config = {
-     projectId: "g4zoa46z",
-     dataset: "production",
-     apiVersion: "2021-10-14",
-     useCdn: false,
+  projectId: 'g4zoa46z',
+  dataset: 'production',
+  apiVersion: '2021-10-14',
+  useCdn: false,
 };
 
-const SITE_URL = "https://www.budgetrepaircenter.nz";
+const SITE_URL = 'https://budgetrepaircenter.nz';
 
 const sanityClient = createClient(config);
 
@@ -78,20 +76,24 @@ async function generateSitemap() {
           <lastmod>${formattedDateTime}</lastmod>
           <priority>1.00</priority>
         </url>
-       `).join("")}
+       `
+        )
+        .join('')}
        ${services
-          .map(
-            (item) => `
+         .map(
+           (item) => `
           <url>
             <loc>${SITE_URL}/services/${item.slug}</loc>
             <lastmod>${formattedDateTime}</lastmod>
             <priority>1.00</priority>
           </url>
-         `).join("")}
+         `
+         )
+         .join('')}
 
     </urlset>
   `;
-  fs.writeFileSync("public/sitemap.xml", sitemap);
+  fs.writeFileSync('public/sitemap.xml', sitemap);
 }
 
 generateSitemap();
