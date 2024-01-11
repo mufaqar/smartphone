@@ -202,7 +202,7 @@ export const data = [
         icon: <IoLocation />,
     },
     {
-        title: "info@budgetrepaircenter.nz. <br/> conzadmin@budgetrepaircenter.nz.co.nz",
+        title: "info@budgetrepaircenter.nz. <br/> conzadmin@budgetrepaircenter.nz",
         icon: <PiCardholder />,
     },
     {

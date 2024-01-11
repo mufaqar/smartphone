@@ -53,8 +53,8 @@ function index() {
                             <ul>
                                 <li className='list-none text-2xl text-blue-600 flex  items-center  pb-4 '> <RiMapPinLine /><span className='font-normal pl-2 lg:whitespace-nowrap  text-base text-[#444444]  leading-normal'>1191 Eruera Street, Rotorua 3010, NZ</span></li>
                                 <li className='list-none flex lg:text-xl   text-blue-600 items-center pb-4'>  <FaPhone /><span className='font-normal pl-2  text-base text-[#444444]  leading-normal'> 0064-7-3477044</span></li>
-                                <li className='list-none flex lg:text-xl  text-blue-600 items-center  pb-4'> <PiCardholder /><span className='font-normal pl-2  text-base text-[#444444]  leading-normal'>info@budgetrepaircenter.nz.co.nz</span></li>
-                                <li className='list-none flex lg:text-xl  text-blue-600 items-center '> <FcGlobe /><span className='font-normal pl-2  text-base text-[#444444]  leading-normal'> www.budgetrepaircenter.nz.co.nz</span></li>
+                                <li className='list-none flex lg:text-xl  text-blue-600 items-center  pb-4'> <PiCardholder /><span className='font-normal pl-2  text-base text-[#444444]  leading-normal'>info@budgetrepaircenter.nz</span></li>
+                                <li className='list-none flex lg:text-xl  text-blue-600 items-center '> <FcGlobe /><span className='font-normal pl-2  text-base text-[#444444]  leading-normal'> www.budgetrepaircenter.nz</span></li>
                             </ul>
                         </div>
                     </div>
