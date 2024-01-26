@@ -79,9 +79,9 @@ export default Facilities
 
 export const Services_Data = [
   {
-    title: "Repair Cost Search",
+    title: "Find your repair quote",
     icon: <MdOutlineContentPasteSearch />,
-    info: "view price by models, laptops, smartphones, xbox, play stations",
+    info: "Select Make, Model and fault type to find the repair cost in seconds.",
     link_title: "Search Now",
     link: "https://jobform.budgetrepaircenter.nz/search"
   },
@@ -89,14 +89,14 @@ export const Services_Data = [
   {
     title: "Agent Portal",
     icon: <GrSystem />,
-    info: "Portal where agent can create tickets , get exact price and Qoutation about any product and check orders free",
+    info: "If you are running a repair shop and don’t have HI-TECH LAB. Register here, and choose us as your highly qualified repair partner.",
     link_title: "Create Ticket",
-    link: "https://jobform.budgetrepaircenter.nz/agent-dashboard"
+    link: "https://jobform.budgetrepaircenter.nz/"
   },
   {
     title: "Send  & Pay",
     icon: <MdPayments />,
-    info: "You will send us your product and pay us | Relax! Our expert will fix the device  ",
+    info: "After registration at the online web portal, send us your query, and our expert technician reply with a quotation for repair; if you are happy with the cost, ship us, and track your device via your dedicated web portal. ",
     link_title: "Send your Device",
     link: "https://jobform.budgetrepaircenter.nz/agent-dashboard"
 
@@ -105,9 +105,9 @@ export const Services_Data = [
   {
     title: "Receive You Device",
     icon: <SiMinutemailer />,
-    info: "Portal where techincal will reply on ticket with in 24 hours",
+    info: "We fix and update the web portal, and you will receive a notification and pay the agreed price; we will ship back, and we will fix the gadgets with a warranty. We also fix motherboard issues.",
     link_title: "Get Your Device",
-    link: "https://jobform.budgetrepaircenter.nz/agent-dashboard"
+    link: "https://jobform.budgetrepaircenter.nz"
 
 
   },
