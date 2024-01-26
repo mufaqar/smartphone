@@ -30,8 +30,8 @@ function Navbar() {
           <div>
 
             <div className='flex items-center lg:px-4 '>
-              <Link href={''} className='text-sm p-2 rounded-full bg-blue-600 text-white hover:bg-orange-500 transition duration-300 ease-in-out hover:opacity-100'><FaPhoneAlt /></Link>
-              <p className='text-white pl-2 hover:text-blue-300 transition duration-500 ease-in-out hover:opacity-100 cursor-pointer font-[light]'> +64-7-3477044 </p>
+              <Link href="tel:+64073477044" className='text-sm p-2 rounded-full bg-blue-600 text-white hover:bg-orange-500 transition duration-300 ease-in-out hover:opacity-100'><FaPhoneAlt /></Link>
+              <p className='text-white pl-2 hover:text-blue-300 transition duration-500 ease-in-out hover:opacity-100 cursor-pointer font-[light]'> +64 07 3477044 </p>
 
             </div >
           </div>

@@ -22,7 +22,7 @@ function Facilities() {
                   About Us
                 </h3>
                 <p className='text-lg font-medium text-black mb-5'>
-                  Budget Computers and Kiwi Mobiles are a locally owned and operated store in Rotorua, New Zealand. They specialize in offering a wide range of budget-friendly computers, mobile phones, and related accessories. The store is known for its customer care and personalised services, helping customers find the best products according to their needs while staying within their budget. Budget Computers and Kiwi Mobiles staff members have extensive knowledge of the products they sell, ensuring that customers receive quality support and assistance
+                Budget Computers and Kiwi Mobiles are locally owned and operated stores in Rotorua, New Zealand. We specialize in offering to repair a wide range of budget-friendly computers, mobile phones, Gaming consoles and related accessories. The store is known for its customer care and personalised services, helping customers find the best products according to their needs while staying within their budget. Budget Computers and Kiwi Mobiles staff members have extensive knowledge of the products to repair in a HI-TECH LAB, ensuring that customers receive quality support and assistance. We use the latest tools and machines to diagnose a device and make quality repairs. 
                 </p>
                 <Link href="/about" className='block text-lg font-semibold text-white Raleway bg-yellow-500 hover:bg-white hover:text-yellow-500 border-2 border-yellow-500 hover:border-white px-10 py-2.5 w-fit transition duration-300 ease-in-out'>
                   For more visit us.

@@ -7,7 +7,7 @@ import { RiMapPinLine } from "react-icons/ri";
 import { PiCardholder } from "react-icons/pi";
 import { FaPhone } from "react-icons/fa6";
 import { FcGlobe } from "react-icons/fc";
-const ServicesContent = ({ content, mainImage, icon, title,slug }: any) => {
+const ServicesContent = ({ content, mainImage, icon, title, slug }: any) => {
 
 
   return (

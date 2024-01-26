@@ -11,17 +11,17 @@ function MobileNav({ data, isOpen, setIsOpen }: any) {
       <div className='bg-black py-3 container mx-auto px-4 flex flex-row gap-5 justify-between items-center'>
         <ul className='w-full flex flex-col gap-3 justify-center items-center'>
           <li className='group'>
-            <Link href="#" className='text-xs font-normal text-white group-hover:text-yellow-500 flex gap-1  items-center'>
+            <Link href="tel:+64073477044" className='text-xs font-normal text-white group-hover:text-yellow-500 flex gap-1  items-center'>
               <span className='text-xs font-normal text-white group-hover:text-yellow-500 flex gap-1 items-center justify-center'>
                 <FaPhoneAlt />
-              </span> +64-7-3477044
+              </span> +64 07 3477044
             </Link>
           </li>
           <li className='group'>
-            <Link href="#" className='text-xs font-normal text-white group-hover:text-yellow-500 flex gap-1  items-center'>
+            <Link href="mailto:info@budgetrepaircenter.nz" className='text-xs font-normal text-white group-hover:text-yellow-500 flex gap-1  items-center'>
               <span className='text-xs font-normal text-white group-hover:text-yellow-500 flex gap-1 items-center justify-center'>
                 <FaEnvelope />
-              </span> info@example.com
+              </span> info@budgetrepaircenter.nz
             </Link>
           </li>
           <li className='group'>

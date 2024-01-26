@@ -180,8 +180,8 @@ function Form() {
                                         <p className="mb-1 font-bold ">
                                             Mobile
                                         </p>
-                                        <Link href="#" className="text-sm text-black">
-                                            +64-7-3477044
+                                        <Link href="tel:+64073477044" className="text-sm text-black">
+                                            +64 07 3477044
                                         </Link>
                                     </div>
                                 </motion.div>
@@ -206,7 +206,7 @@ export const data = [
         icon: <PiCardholder />,
     },
     {
-        title: "+64-7-3477044",
+        title: "+64 07 3477044",
         icon: <FaPhone />,
     },
 
