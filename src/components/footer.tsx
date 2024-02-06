@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link'
-import { FaChevronRight, FaPhoneAlt } from "react-icons/fa";
+import { FaChevronRight, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { FaEnvelope, FaLocationDot } from "react-icons/fa6";
 import { urlForImage } from '../../sanity/lib/image'
 import Image from 'next/image';
@@ -66,19 +66,25 @@ function Footer() {
             Contact Info
           </h5>
           <ul className='flex flex-col gap-3 mt-12'>
+            <li>
+              <Link href="https://maps.app.goo.gl/grhofJM4usQK25zM7" target="_blank" className='  text-white hover:text-yellow-500 flex gap-3  items-center'>
+                <FaMapMarkerAlt />
+                <span className=''>1191 Eruera Street Rotorua,cbd,3010</span>
+              </Link>
+            </li>
 
-
-
-            {siteSettings?.contact?.map((item: any, idx: number) => {
-              return (
-                <li key={idx}>
-                  <Link href="#" className='  text-white hover:text-yellow-500 flex gap-3  items-center'>
-                    <img src={urlForImage(item.image).url()} alt={item.title} width={800} height={800} className=' rounded-full w-5 h-5' />
-                    <span className=''>{item.link}</span>
-                  </Link>
-                </li>
-              )
-            })}
+            <li>
+              <Link href="mailto:info@budgetrepaircenter.nz" className='  text-white hover:text-yellow-500 flex gap-3  items-center'>
+                <FaEnvelope />
+                <span className=''>info@budgetrepaircenter.nz</span>
+              </Link>
+            </li>
+            <li>
+              <Link href="tel:+640773477044" className='  text-white hover:text-yellow-500 flex gap-3  items-center'>
+                <FaEnvelope />
+                <span className=''> DID: +64 07 73477044</span>
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
@@ -86,13 +92,7 @@ function Footer() {
             Working Hours
           </h5>
           <div>
-            {/* <form className='relative mt-7'>
-              <input name='email' id='email' type='email' placeholder='Mail address'
-                className='appearance-none text-base font-normal text-white border border-white rounded-full bg-transparent placeholder:text-white px-5 py-2 block w-full h-11 focus:outline-none' />
-              <button type='submit' className='bg-yellow-500 hover:bg-white text-white hover:text-black w-10 h-10 flex justify-center items-center rounded-full absolute top-[2px] right-[2px]'>
-                <FaChevronRight />
-              </button>
-            </form> */}
+
             <ul className='flex flex-col gap-4 mt-6'>
               {siteSettings?.schedule?.map((item: any, idx: number) => {
                 return (

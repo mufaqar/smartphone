@@ -22,7 +22,7 @@ function Facilities() {
                   About Us
                 </h3>
                 <p className='text-lg font-medium text-black mb-5'>
-                Budget Computers and Kiwi Mobiles are locally owned and operated stores in Rotorua, New Zealand. We specialize in offering to repair a wide range of budget-friendly computers, mobile phones, Gaming consoles and related accessories. The store is known for its customer care and personalised services, helping customers find the best products according to their needs while staying within their budget. Budget Computers and Kiwi Mobiles staff members have extensive knowledge of the products to repair in a HI-TECH LAB, ensuring that customers receive quality support and assistance. We use the latest tools and machines to diagnose a device and make quality repairs. 
+                  Budget Computers and Kiwi Mobiles are locally owned and operated stores in Rotorua, New Zealand. We specialize in offering to repair a wide range of budget-friendly computers, mobile phones, Gaming consoles and related accessories. The store is known for its customer care and personalised services, helping customers find the best products according to their needs while staying within their budget. Budget Computers and Kiwi Mobiles staff members have extensive knowledge of the products to repair in a HI-TECH LAB, ensuring that customers receive quality support and assistance. We use the latest tools and machines to diagnose a device and make quality repairs.
                 </p>
                 <Link href="/about" className='block text-lg font-semibold text-white Raleway bg-yellow-500 hover:bg-white hover:text-yellow-500 border-2 border-yellow-500 hover:border-white px-10 py-2.5 w-fit transition duration-300 ease-in-out'>
                   For more visit us.
@@ -90,14 +90,14 @@ export const Services_Data = [
     title: "Agent Portal",
     icon: <GrSystem />,
     info: "If you are running a repair shop and don’t have HI-TECH LAB. Register here, and choose us as your highly qualified repair partner.",
-    link_title: "Create Ticket",
-    link: "https://jobform.budgetrepaircenter.nz/"
+    link_title: "Register as Agent",
+    link: "https://jobform.budgetrepaircenter.nz/agent-signup/"
   },
   {
     title: "Send  & Pay",
     icon: <MdPayments />,
     info: "After registration at the online web portal, send us your query, and our expert technician reply with a quotation for repair; if you are happy with the cost, ship us, and track your device via your dedicated web portal. ",
-    link_title: "Send your Device",
+    link_title: "Agent Dashboard",
     link: "https://jobform.budgetrepaircenter.nz/agent-dashboard"
 
 
@@ -105,9 +105,9 @@ export const Services_Data = [
   {
     title: "Receive You Device",
     icon: <SiMinutemailer />,
-    info: "We fix and update the web portal, and you will receive a notification and pay the agreed price; we will ship back, and we will fix the gadgets with a warranty. We also fix motherboard issues.",
-    link_title: "Get Your Device",
-    link: "https://jobform.budgetrepaircenter.nz"
+    info: "Save time! Fix your devices online. Click for procedures, tracking, and a free quote in minutes. Access your portal to check device status, payment options, and tracking number. Call 073477044 for quotes and shipping updates.",
+    link_title: "Search and Request a Qoute",
+    link: "https://jobform.budgetrepaircenter.nz/search"
 
 
   },
