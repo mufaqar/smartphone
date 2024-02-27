@@ -10,7 +10,7 @@ import Image from 'next/image';
 function Facilities() {
   return (
     <>
-      <section className='py-16'>
+      <section className='py-16 overflow-x-hidden'>
         <div className='container mx-auto px-3'>
           <div className='grid md:grid-cols-3 grid-cols-1 gap-7 px-5'>
             <div>
@@ -31,7 +31,7 @@ function Facilities() {
 
             </div>
           </div>
-          <h1 className='text-center font-bold text-5xl m-16 underline  underline-offset-8 decoration-2 decoration-blue-600 '>Our Process</h1>
+          <h1 className='text-center font-bold text-5xl m-16 underline  underline-offset-8 decoration-2 decoration-blue-600  '>Our Process</h1>
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}

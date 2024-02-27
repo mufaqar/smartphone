@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 function Blog_Sec({ data }: any) {
     return (
-        <section className='py-16' id='blogsdata'>
+        <section className='py-16 overflow-x-hidden' id='blogsdata'>
             <h1 className='text-center font-bold text-5xl'>Latest Blog</h1>
             <motion.div
                 initial={{ x: -100, opacity: 0 }}
@@ -26,11 +26,11 @@ function Blog_Sec({ data }: any) {
                         return (
                             <div key={idx} className="bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                                 <div>
-                                    <img className='w-full h-72' width={225} height={189} src={urlForImage(item.mainImage).url()} alt={item.title} />
+                                    <Image className='w-full h-72' width={225} height={189} src={urlForImage(item.mainImage).url()} alt={item.title} />
                                 </div>
                                 <div className="flex flex-col justify-between py-7 px-4 h-52">
                                     <div>
-                                        <h5 className="mb-2 text-lg text-center text-black leading-tight text-neutral-800 Raleway">
+                                        <h5 className="mb-2 text-lg text-center leading-tight text-neutral-800 Raleway">
                                             <Link href={`/blog/${item.slug.current}`} className='text-black'>
                                                 {item.title}
                                             </Link>
