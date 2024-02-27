@@ -44,15 +44,15 @@ function Header() {
                 <TextTransition inline={true} springConfig={presets.wobbly}>{TEXTS[index % TEXTS.length]}</TextTransition>
               </div>
               <ul className='flex flex-row gap-3 justify-end lg:-mt-6'>
-              {social?.map((item: any, idx: number) => {
-              return (
-                <li key={idx}>
-                  <Link href={item?.link} className='text-base font-normal text-white  flex  w-8 h-8 bg-transparent   border-2 border-white rounded-full hover:text-yellow-700  hover:border-yellow-700 items-center justify-center'>
-                    <span className=''>{item.icon} </span>
-                  </Link>
-                </li>
-              )
-            })}
+                {social?.map((item: any, idx: number) => {
+                  return (
+                    <li key={idx}>
+                      <Link href={item?.link} className='text-base font-normal text-white  flex  w-8 h-8 bg-transparent   border-2 border-white rounded-full hover:text-yellow-700  hover:border-yellow-700 items-center justify-center'>
+                        <span className=''>{item.icon} </span>
+                      </Link>
+                    </li>
+                  )
+                })}
               </ul>
             </div>
           </div>
@@ -64,7 +64,7 @@ function Header() {
                 <div>
                   <Link href="/" className='text-center'>
                     <Image src="/logo.png" alt={`logo`} width={317} height={100} className='md:w-1/2 w-full mx-auto relative z-50' />
-                   <span className='relative z-50 block w-fit mx-auto text-red-900 font-semibold Raleway'> HI-TECH Repair Center. </span>
+                    <span className='relative z-50 block w-fit mx-auto text-red-900 font-semibold Raleway'> HI-TECH Repair Center. </span>
                   </Link>
                 </div>
               </div>
