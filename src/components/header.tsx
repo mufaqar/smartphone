@@ -61,8 +61,9 @@ function Header() {
             <div className='w-2/3 ml-auto'>
               <div className='absolute top-0 left-0 w-1/3 h-full flex items-center justify-center shape'>
                 <div>
-                  <Link href="/">
+                  <Link href="/" className='text-center'>
                     <Image src="/logo.png" alt={`logo`} width={800} height={260} className='md:w-1/2 w-full mx-auto relative z-50' />
+                   <span className='relative z-50 block w-fit mx-auto text-red-900 font-semibold Raleway'> HI-TECH Repair Center. </span>
                   </Link>
                 </div>
               </div>
