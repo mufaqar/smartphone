@@ -4,6 +4,7 @@ import { urlForImage } from '../../sanity/lib/image'
 import Image from 'next/image';
 import MobileNav from './mobile-nav';
 import TextTransition, { presets } from 'react-text-transition';
+import { social } from '@/const/data';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,15 +44,15 @@ function Header() {
                 <TextTransition inline={true} springConfig={presets.wobbly}>{TEXTS[index % TEXTS.length]}</TextTransition>
               </div>
               <ul className='flex flex-row gap-3 justify-end lg:-mt-6'>
-                {siteSettings?.socialicons?.map((item: any, idx: number) => {
-                  return (
-                    <li key={idx}>
-                      <Link href={item?.link} className='text-base font-normal   flex  w-8 h-8 bg-transparent   border-2 border-transparent rounded-full  hover:border-yellow-700 items-center justify-center'>
-                        <img src={urlForImage(item.image).url()} alt={item.title} width={800} height={800} className=' rounded-full w-5 h-5 ' />
-                      </Link>
-                    </li>
-                  )
-                })}
+              {social?.map((item: any, idx: number) => {
+              return (
+                <li key={idx}>
+                  <Link href={item?.link} className='text-base font-normal text-white  flex  w-8 h-8 bg-transparent   border-2 border-white rounded-full hover:text-yellow-700  hover:border-yellow-700 items-center justify-center'>
+                    <span className=''>{item.icon} </span>
+                  </Link>
+                </li>
+              )
+            })}
               </ul>
             </div>
           </div>
@@ -62,7 +63,7 @@ function Header() {
               <div className='absolute top-0 left-0 w-1/3 h-full flex items-center justify-center shape'>
                 <div>
                   <Link href="/" className='text-center'>
-                    <Image src="/logo.png" alt={`logo`} width={800} height={260} className='md:w-1/2 w-full mx-auto relative z-50' />
+                    <Image src="/logo.png" alt={`logo`} width={317} height={100} className='md:w-1/2 w-full mx-auto relative z-50' />
                    <span className='relative z-50 block w-fit mx-auto text-red-900 font-semibold Raleway'> HI-TECH Repair Center. </span>
                   </Link>
                 </div>

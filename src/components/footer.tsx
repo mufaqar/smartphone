@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { FaChevronRight, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { FaEnvelope, FaLocationDot } from "react-icons/fa6";
 import { urlForImage } from '../../sanity/lib/image'
+import { social } from '@/const/data'
 import Image from 'next/image';
 function Footer() {
 
@@ -26,18 +27,18 @@ function Footer() {
       <div className="container mx-auto px-4 grid md:grid-cols-5 grid-cols-1 gap-7 py-16">
         <div className='md:col-span-2'>
           <Link href="/" className='inline-block'>
-            <Image src={siteSettings?.logo?.asset?.url} alt={`logo`} width={800} height={800} className='md:w-1/2 w-full' />
+            <Image src={siteSettings?.logo?.asset?.url} alt={`logo`} width={317} height={100} className='md:w-1/2 w-full' />
 
           </Link>
           <p className='text-base font-normal text-white my-5 max-w-[350px]'>
             {siteSettings?.about}
           </p>
           <ul className="flex gap-2">
-            {siteSettings?.socialicons?.map((item: any, idx: number) => {
+            {social?.map((item: any, idx: number) => {
               return (
                 <li key={idx}>
-                  <Link href={item?.link} className='text-base font-normal   flex  w-10 h-10 bg-transparent   border-2 border-transparent rounded-full  hover:border-yellow-700 items-center justify-center'>
-                    <img src={urlForImage(item.image).url()} alt={item.title} width={800} height={800} className='rounded-full w-6 h-6' />
+                  <Link href={item?.link} className='text-lg font-normal text-white  flex  w-10 h-10 bg-transparent   border-2 border-white rounded-full hover:text-yellow-700  hover:border-yellow-700 items-center justify-center'>
+                    <span className=''>{item.icon} </span>
                   </Link>
                 </li>
               )
