@@ -3,64 +3,105 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 @font-face {
-    font-family: roboto;
-    src: url('../../public//fonts//Roboto-Black.ttf');
+   font-family: roboto;
+   src: url('../../public//fonts//Roboto-Black.ttf');
 }
 
 @font-face {
-    font-family: light;
-    src: url('../../public/fonts/Roboto-Light.ttf');
+   font-family: light;
+   src: url('../../public/fonts/Roboto-Light.ttf');
 }
 
-.Raleway,h1,h2,h3,h4,h5,h6,p,li,span,a {
-    font-family: 'Raleway', sans-serif;
+.Raleway,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+span,
+a {
+   font-family: 'Raleway', sans-serif;
 }
 
-.shape::after{
-    content: "";
-    background: #fff;
-    position: absolute;
-    transition: all 0.3s ease-in;
-    z-index: -1;
-    height: 100%;
-    top: 0;
-    transform: skew(40deg);
-    transition-duration: 0.6s;
-    transform-origin: top left;
-    width: 108%;
-    left: -165px;
-    z-index: 2;
+.shape::after {
+   content: "";
+   background: #fff;
+   position: absolute;
+   transition: all 0.3s ease-in;
+   z-index: -1;
+   height: 100%;
+   top: 0;
+   transform: skew(40deg);
+   transition-duration: 0.6s;
+   transform-origin: top left;
+   width: 108%;
+   left: -165px;
+   z-index: 2;
 }
 
- #servicesdata,h1,h2,h3,h4{
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px 0px;
- }
- #servicesdata,p{
-    font-family: light;
- }
- #servicesdata,h5{
-    font-size: 20px;
-    font-weight: 200;
-    padding: 10px 0px; 
- }
-#blogsdata,h1,h2,h3,h4{
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px 0px;
-   color:#444444
- }
- #blogsdata,a{
-  color:#FFCB2E
+#servicesdata,
+h1,
+h2,
+h3,
+h4 {
+   font-size: 20px;
+   font-weight: bold;
+   padding: 10px 0px;
 }
- #blogsdata,p{
-    font-family: light;
- }
- #blogsdata,li{
-    font-family: light;
-    list-style-type: square;
-    list-style-position: inside;
- }
+
+#servicesdata,
+p {
+   font-family: light;
+}
+
+#servicesdata,
+h5 {
+   font-size: 20px;
+   font-weight: 200;
+   padding: 10px 0px;
+}
+
+#blogsdata,
+h1,
+h2,
+h3,
+h4 {
+   font-size: 20px;
+   font-weight: bold;
+   padding: 10px 0px;
+   color: #444444
+}
+
+#blogsdata,
+a {
+   color: #FFCB2E
+}
+
+#blogsdata,
+p {
+   font-family: light;
+}
+
+#blogsdata,
+li {
+   font-family: light;
+   list-style-type: square;
+   list-style-position: inside;
+}
+
+.partners .slick-dots li button:before {
+   font-size: 12px;
+   opacity: 1;
+   color: #ddd;
+}
+.partners .slick-dots li.slick-active button:before{
+   opacity: 1;
+   color: #eab308;
+}
