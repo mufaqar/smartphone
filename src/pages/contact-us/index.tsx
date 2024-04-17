@@ -1,20 +1,48 @@
 import PageBanner from '@/components/page-banner'
+import SeoMeta from '@/components/seo';
 import Link from 'next/link';
-import React from 'react'
+import React, { useState } from 'react'
+import { useForm, SubmitHandler } from "react-hook-form";
+
 import { FaGlobeAfrica, FaMapMarkerAlt, FaPhoneAlt, FaRegEnvelope } from "react-icons/fa";
 
 function Contact_Us() {
+    const {
+        register,
+        handleSubmit,
+        watch,
+        reset,
+        formState: { errors },
+    } = useForm<any>()
+    const [sending, setSending] = useState(false)
+
+    const onSubmit: SubmitHandler<any> = (data: any) => {
+        setSending(true)
+        fetch('/api/email', {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json, text/plain, */*',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        }).then((res) => {
+            console.log('Response received');
+            if (res.status === 200) {
+                console.log('Response succeeded!');
+                alert('Message Successfully send.!');
+                reset();
+                setSending(false)
+            }
+        });
+    }
     return (
         <>
+            <SeoMeta title="Contact Us | Budget Computers and Kiwi Mobiles" description="Get in touch with us! Whether you have questions, feedback, or inquiries, our dedicated team is here to assist you." url="https://budgetrepaircenter.nz/contact-us" />
             <PageBanner
                 Custm_BG="bg-[url('/images/about.jpg')]"
                 title="Contact Us" />
-            <section className="mb-32">
-                <div className="relative h-[500px] overflow-hidden">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12552.233064615843!2d176.2507699974189!3d-38.1388381229038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6c277b70381649%3A0x193c03a4dd2ee1bd!2s1191%20Eruera%20Street%2C%20Rotorua%203010%2C%20New%20Zealand!5e0!3m2!1sen!2s!4v1702976204503!5m2!1sen!2s"
-                        className="left-0 top-0 h-full w-full" frameBorder={0}
-                        allowFullScreen></iframe>
-                </div>
+            <section className="mt-32 container mx-auto">
+
                 <div className="container px-6 md:px-12">
                     <div className="block rounded-lg bg-[hsla(0,0%,100%,0.7)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
                         <div className="mb-12 grid gap-x-6 md:grid-cols-2 lg:grid-cols-4">
@@ -38,68 +66,70 @@ function Contact_Us() {
                                 <span className="block mx-auto mb-6 h-8 w-8 text-yellow-500">
                                     <FaPhoneAlt className="text-2xl" />
                                 </span>
-                                <Link href="tel:+64-7-3477044" className="text-base font-medium Raleway">
-                                    +64-7-3477044
+                                <Link href="tel:073477044" className="text-base font-medium Raleway">
+                                    073 4770 44
                                 </Link>
                             </div>
                             <div className="mx-auto text-center">
                                 <span className="block mx-auto mb-6 h-8 w-8 text-yellow-500">
                                     <FaRegEnvelope className="text-2xl" />
                                 </span>
-                                <Link href="mailto:conzadmin@smartphonesrepair.co.nz" className="text-base font-medium Raleway">
-                                    conzadmin@smartphonesrepair.co.nz.
+                                <Link href="mailto:info@budgetrepaircenter.nz" className="text-base font-medium Raleway">
+                                    info@budgetrepaircenter.nz
                                 </Link>
                             </div>
                         </div>
                         <div className="mx-auto max-w-[700px]">
-                            <form>
-                                <div className="relative mb-6">
-                                    <input type="text"
-                                        className="peer block min-h-[auto] w-full rounded border bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear peer-focus:text-yellow-500 motion-reduce:transition-none placeholder:opacity-0"
-                                        id="fname"
-                                        name="fname"
-                                        placeholder='First Name' />
-                                    <label
-                                        className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-yellow-500 motion-reduce:transition-none"
-                                        htmlFor="fname">Name
-                                    </label>
+
+                            <form className="bg-white grid gap-5" onSubmit={handleSubmit(onSubmit)}>
+                                <h3 className="text-lg font-bold leading-7 pb-1 border-b">
+                                    Get In Touch
+                                </h3>
+                                <div className="md:flex w-full gap-5 items-center">
+                                    <div className="md:w-1/2 flex flex-col">
+                                        <label className="text-base font-semibold leading-none hidden">Name</label>
+                                        <input {...register("name", { required: true })} tabIndex={0} arial-label="Your Name" type="name" className="text-sm leading-none p-3 focus:outline-none focus:border-[#34A777] bg-transparent border rounded border-[#F0F0F0] text-[#777777] placeholder:text-[#777777]" placeholder="Your Name" />
+                                        {errors.name && <span className='text-xs text-red-500'>This field is required</span>}
+                                    </div>
+                                    <div className="md:w-1/2 flex flex-col md:mt-0 mt-7">
+                                        <label className="text-base font-semibold leading-none hidden">Email</label>
+                                        <input {...register("email", { required: true })} type="email" className="text-sm leading-none p-3 focus:outline-none focus:border-[#34A777] bg-transparent border rounded border-[#F0F0F0] text-[#777777] placeholder:text-[#777777]" placeholder="E-mail address" />
+                                        {errors.email && <span className='text-xs text-red-500'>This field is required</span>}
+                                    </div>
                                 </div>
-                                <div className="relative mb-6">
-                                    <input type="email"
-                                        className="peer block min-h-[auto] w-full rounded border bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear peer-focus:text-yellow-500 motion-reduce:transition-none placeholder:opacity-0"
-                                        id="email"
-                                        name="email"
-                                        placeholder='Email address' />
-                                    <label
-                                        className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-yellow-500 motion-reduce:transition-none"
-                                        htmlFor="email">Email address
-                                    </label>
+                                <div className="md:flex w-full gap-5 items-center">
+                                    <div className="md:w-1/2 flex flex-col">
+                                        <label className="text-base font-semibold leading-none hidden">Telephone</label>
+                                        <input {...register("phone")} type="tel" className="text-sm leading-none p-3 focus:outline-none focus:border-[#34A777] bg-transparent border rounded border-[#F0F0F0] text-[#777777] placeholder:text-[#777777]" placeholder="Telephone" />
+                                        {errors.phone && <span className='text-xs text-red-500'>This field is required</span>}
+                                    </div>
+                                    <div className="md:w-1/2 flex flex-col md:mt-0 mt-7">
+
+                                        <label className="text-base font-semibold leading-none hidden">Subject</label>
+                                        <input {...register("subject", { required: true })} type="text" className="text-sm leading-none p-3 focus:outline-none focus:border-[#34A777] bg-transparent border rounded border-[#F0F0F0] text-[#777777] placeholder:text-[#777777]" placeholder="Subject" />
+                                        {errors.subject && <span className='text-xs text-red-500'>This field is required</span>}
+                                    </div>
                                 </div>
-                                <div className="relative mb-6">
-                                    <input type="phone"
-                                        className="peer block min-h-[auto] w-full rounded border bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear peer-focus:text-yellow-500 motion-reduce:transition-none placeholder:opacity-0"
-                                        id="phone"
-                                        name="phone"
-                                        placeholder='Phone' />
-                                    <label
-                                        className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-yellow-500 motion-reduce:transition-none"
-                                        htmlFor="email">Phone
-                                    </label>
+                                <div className="w-full flex flex-col">
+                                    <label className="text-base font-semibold leading-none hidden">Message</label>
+                                    <textarea {...register("comment", { required: true })} tabIndex={0} aria-label="Write your message" role="textbox" className="text-sm leading-none p-3 focus:outline-none focus:border-[#34A777] bg-transparent border rounded border-[#F0F0F0] text-[#777777] placeholder:text-[#777777] resize-none h-32" defaultValue={"Write your message"} />
+                                    {errors.comment && <span className='text-xs text-red-500'>This field is required</span>}
                                 </div>
-                                <div className="relative mb-6">
-                                    <textarea
-                                        className="peer block min-h-[auto] w-full rounded border bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear motion-reduce:transition-none  placeholder:opacity-0"
-                                        id="exampleFormControlTextarea1" rows={5} placeholder="Your message"></textarea>
-                                    <label htmlFor="exampleFormControlTextarea1"
-                                        className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-yellow-500 motion-reduce:transition-none">Message</label>
+                                <div className="flex items-center justify-start w-full">
+                                    <input type='submit' className="mt-5 text-base font-semibold leading-none text-white py-4 px-10 bg-[#89DBC4] hover:bg-[#34A777]" value={sending ? 'SENDING...' : `SUBMIT`} />
                                 </div>
-                                <button type="submit"
-                                    className="inline-block w-full rounded bg-yellow-500 hover:bg-black px-6 pt-2.5 pb-2 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out">
-                                    Send
-                                </button>
                             </form>
+
+
+
+
                         </div>
                     </div>
+                </div>
+                <div className="relative h-[500px] overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12552.233064615843!2d176.2507699974189!3d-38.1388381229038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6c277b70381649%3A0x193c03a4dd2ee1bd!2s1191%20Eruera%20Street%2C%20Rotorua%203010%2C%20New%20Zealand!5e0!3m2!1sen!2s!4v1702976204503!5m2!1sen!2s"
+                        className="left-0 top-0 h-full w-full"
+                        allowFullScreen></iframe>
                 </div>
             </section>
         </>

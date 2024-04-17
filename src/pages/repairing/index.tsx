@@ -27,7 +27,7 @@ function index() {
                         duration: 3,
                     }} className='text-left px-4 pb-16  '>
                     <h2 className='font-bold Raleway text-2xl pt-6 pb-8 text-[#444444]'>iPhone, iPad and MacBook Repair</h2>
-                    <Link href={'/'} className='text-amber-500 font-normal text-base hover:text-slate-900 duration-500 '>Get an Online Quote</Link>
+                    <Link href={'/request-a-qoute'} className='text-amber-500 font-normal text-base hover:text-slate-900 duration-500 bg-yellow-500 '>Get an Online Quote</Link>
                     <div className='lg:flex lg:space-x-16 '>
                         <div className='pt-6'>
                             <h2 className='font-bold text-2xl pt-6 pb-4 text-[#444444]'>iPhone, iPad and MacBook Repair</h2>
@@ -53,8 +53,8 @@ function index() {
                             <ul>
                                 <li className='list-none text-2xl text-blue-600 flex  items-center  pb-4 '> <RiMapPinLine /><span className='font-normal pl-2 lg:whitespace-nowrap  text-base text-[#444444]  leading-normal'>1191 Eruera Street, Rotorua 3010, NZ</span></li>
                                 <li className='list-none flex lg:text-xl   text-blue-600 items-center pb-4'>  <FaPhone /><span className='font-normal pl-2  text-base text-[#444444]  leading-normal'> 0064-7-3477044</span></li>
-                                <li className='list-none flex lg:text-xl  text-blue-600 items-center  pb-4'> <PiCardholder /><span className='font-normal pl-2  text-base text-[#444444]  leading-normal'>info@smartphonesrepair.co.nz</span></li>
-                                <li className='list-none flex lg:text-xl  text-blue-600 items-center '> <FcGlobe /><span className='font-normal pl-2  text-base text-[#444444]  leading-normal'> www.smartphonesrepair.co.nz</span></li>
+                                <li className='list-none flex lg:text-xl  text-blue-600 items-center  pb-4'> <PiCardholder /><span className='font-normal pl-2  text-base text-[#444444]  leading-normal'>info@budgetrepaircenter.nz</span></li>
+                                <li className='list-none flex lg:text-xl  text-blue-600 items-center '> <FcGlobe /><span className='font-normal pl-2  text-base text-[#444444]  leading-normal'> www.budgetrepaircenter.nz</span></li>
                             </ul>
                         </div>
                     </div>

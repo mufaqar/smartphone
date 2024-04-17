@@ -25,8 +25,8 @@ function Form() {
                                 duration: 1,
                             }}
                             className="md:w-1/2 w-full">
-                            <h3 className='md:text-4xl text-3xl font-bold uppercase text-black Raleway mb-7'>
-                                BOOK APPOINTMENT
+                            <h3 className='md:text-4xl text-3xl font-bold  text-black Raleway mb-7'>
+                            Request a Free Quote
                             </h3>
                             <form className='grid grid-cols-1 gap-5'>
                                 <div className='grid md:grid-cols-2 grid-cols-1 gap-5'>
@@ -82,7 +82,7 @@ function Form() {
                                     <label htmlFor="message"
                                         className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-black transition-all duration-200 ease-out -translate-y-[0.9rem] peer-focus:scale-[0.9] peer-focus:opacity-100 opacity-0 peer-focus:text-black peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none ">Message</label>
                                 </div>
-                                <button className={`text-lg Raleway bg-yellow-500 px-10 py-2.5 font-medium text-white hover:bg-black hover:-translate-y-4 rounded-none`}>
+                                <button className={`text-lg Raleway bg-yellow-500 px-10 py-2.5 font-medium text-white hover:bg-black rounded-none`}>
                                     Submit
                                 </button>
                             </form>
@@ -108,8 +108,8 @@ function Form() {
                                         <p className="mb-1 font-bold ">
                                             Send a mail
                                         </p>
-                                        <Link href="#" className="text-sm text-black">
-                                            info@smartphonesrepair.
+                                        <Link href="mailto:info@budgetrepaircenter.nz" className="text-sm text-black">
+                                            info@budgetrepaircenter.nz
                                         </Link>
                                     </div>
                                 </motion.div>
@@ -156,8 +156,8 @@ function Form() {
                                         <p className="mb-1 font-bold ">
                                             Technical support
                                         </p>
-                                        <Link href="#" className="text-sm text-black">
-                                            conzadmin@smartphonesrepair.co.nz
+                                        <Link href="mailto:tech@budgetrepaircenter.nz" className="text-sm text-black">
+                                            tech@budgetrepaircenter.nz
                                         </Link>
                                     </div>
                                 </motion.div>
@@ -180,8 +180,8 @@ function Form() {
                                         <p className="mb-1 font-bold ">
                                             Mobile
                                         </p>
-                                        <Link href="#" className="text-sm text-black">
-                                            +64-7-3477044
+                                        <Link href="tel:+64073477044" className="text-sm text-black">
+                                            +64 07 3477044
                                         </Link>
                                     </div>
                                 </motion.div>
@@ -202,11 +202,11 @@ export const data = [
         icon: <IoLocation />,
     },
     {
-        title: "info@smartphonesrepair. <br/> conzadmin@smartphonesrepair.co.nz",
+        title: "info@budgetrepaircenter.nz. <br/> conzadmin@budgetrepaircenter.nz",
         icon: <PiCardholder />,
     },
     {
-        title: "+64-7-3477044",
+        title: "+64 07 3477044",
         icon: <FaPhone />,
     },
 

@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import { HiMiniArrowLongLeft, HiMiniArrowLongRight } from "react-icons/hi2";
 import { motion, AnimatePresence } from "framer-motion";
-
 function Hero() {
   const [selectedImage, setSelectedImage] = useState(0);
   const data = [
@@ -22,22 +21,17 @@ function Hero() {
       img: "images/bgg2.avif",
       title: 'Best Mobile Selling Site'
     },
-  
   ];
-
   const [allImages, setAllImages] = useState(data);
-
   useEffect(() => {
     const intervalId = setInterval(() => {
       setSelectedImage((prevSelectedImage) =>
         prevSelectedImage < allImages.length - 1 ? prevSelectedImage + 1 : 0
       );
     }, 5000);
-
     // Clear the interval when the component unmounts
     return () => clearInterval(intervalId);
   }, [allImages.length]); // Include allImages.length as a dependency to ensure correct cleanup
-
   return (
     <section className="overflow-hidden">
       <motion.figure
@@ -65,19 +59,17 @@ function Hero() {
           />
         </AnimatePresence>
       </motion.figure>
-
       <ul className="flex justify-between ">
         <li
-          className="absolute text-4xl text-white hover:text-yellow-500 bg-white/40 hover:bg-white  p-2 top-2/3 left-5 cursor-pointer transition duration-300 ease-in-out hover:opacity-100"
+          className="absolute text-4xl list-none text-white hover:text-yellow-500 bg-white/40 hover:bg-white  p-2 top-2/3 left-5 cursor-pointer transition duration-300 ease-in-out hover:opacity-100"
           onClick={() => {
             if (selectedImage > 0) setSelectedImage(selectedImage - 1);
           }}
         >
           <HiMiniArrowLongLeft />
         </li>
-
         <li
-          className="absolute text-4xl text-white hover:text-yellow-500 bg-white/40 hover:bg-white p-2 top-2/3 right-5 cursor-pointer transition duration-300 ease-in-out hover:opacity-100"
+          className="absolute text-4xl list-none text-white hover:text-yellow-500 bg-white/40 hover:bg-white p-2 top-2/3 right-5 cursor-pointer transition duration-300 ease-in-out hover:opacity-100"
           onClick={() => {
             if (selectedImage < allImages.length - 1)
               setSelectedImage(selectedImage + 1);

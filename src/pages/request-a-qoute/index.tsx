@@ -1,10 +1,14 @@
 import Form from '@/components/form'
+import SeoMeta from '@/components/seo'
 import React from 'react'
 
 function Request_Qoute() {
     return (
         <div>
-                <Form />
+            <SeoMeta
+                title="Request a Free Quote | Budget Computers and Kiwi Mobiles" description="Request a Free Quote about computers, mobile phones, and related accessories" url="https://budgetrepaircenter.nz/request-a-qoute" />
+
+            <Form />
         </div>
     )
 }
