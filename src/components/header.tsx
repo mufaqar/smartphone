@@ -36,7 +36,7 @@ function Header() {
 
   return (
     <>
-      <header className='bg-white relative md:block hidden' id='header'>
+      <header className='bg-white relative md:border-b border-blue-900/70 md:block hidden' id='header'>
         <div className='bg-black py-3'>
           <div className='container mx-auto px-4'>
             <div className='flex justify-between  items-center w-2/3 ml-auto'>
