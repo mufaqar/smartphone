@@ -95,13 +95,15 @@ li {
    list-style-type: square;
    list-style-position: inside;
 }
-
-.partners .slick-dots li button:before {
+.slick-dots {
+   bottom: -50px;
+}
+.slick-dots li button:before {
    font-size: 12px;
    opacity: 1;
    color: #ddd;
 }
-.partners .slick-dots li.slick-active button:before{
+.slick-dots li.slick-active button:before{
    opacity: 1;
    color: #eab308;
 }
