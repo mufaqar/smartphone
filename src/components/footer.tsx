@@ -136,12 +136,15 @@ function Footer() {
           <h6 className='text-xl font-medium text-white Raleway mb-6'>
             Our Newsletter
           </h6>
+          <p className='text-sm font-normal text-white Raleway py-0 mb-2'>
+            Sign to Newsletter to get the latest news and offers.
+          </p>
           <form className='bg-white rounded flex'>
             <input
               name='email'
               id='email'
-              placeholder='email'
-              className='text-base font-normal text-white Raleway py-[6px] px-[10px] focus:outline-none rounded-l' />
+              placeholder='Email'
+              className='text-base font-normal text-white Raleway py-[6px] px-[10px] focus:outline-none rounded-l w-full' />
             <button type='submit' className='text-base font-normal text-white Raleway bg-yellow-500 hover:bg-black px-5 rounded-r'>
               Subscribe
             </button>
