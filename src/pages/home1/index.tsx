@@ -15,7 +15,7 @@ export default function Home1() {
                         Electronic Repair Experts
                     </h1>
                     <p className='md:text-2xl text-lg font-normal text-white text-center Raleway my-5'>
-                        We are team of talented Electronic Repair Experts in Hamilton New zealand
+                        We are team of talented Electronic Repair Experts in ROTORUA New zealand
                     </p>
                 </div>
                 <div className='container mx-auto px-4 grid md:grid-cols-4 grid-cols-1 gap-5 mt-16'>
