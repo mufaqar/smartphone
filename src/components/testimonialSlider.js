@@ -23,7 +23,7 @@ export default function TestimonialSlider() {
                     <p className='text-sm font-medium text-[#ddd] text-center Raleway mb-4'>
                         {item?.position}
                     </p>
-                    <blockquote className='md:text-xl text-lg font-normal text-[#eee] text-center Raleway italic max-w-[80%] mx-auto'>
+                    <blockquote className='md:text-base text-sm font-normal text-[#eee] text-center Raleway italic max-w-[80%] mx-auto'>
                         {item?.review}
                     </blockquote>
                 </div>
