@@ -6,7 +6,7 @@ export default function Pricing() {
             <section className='py-16'>
                 <div className='container mx-auto md:px-12 px-4'>
                     <h4 className='text-base font-medium text-[#aaaaaa] Raleway uppercase mb-1 py-0'>
-                        IPHONE PRICES @ APPLEFIX
+                        IPHONE PRICES @ Budget Computers and Kiwi Mobiles
                         <span className='hr_line inline-block my-1.5 w-[120px] ml-2 h-[1px] bg-yellow-500'></span>
                     </h4>
                     <h2 className='md:text-4xl text-2xl font-bold Raleway uppercase py-0'>

@@ -28,7 +28,7 @@ export default function Home1() {
                                 iPhone Repair
                             </Link>
                             <p className='text-base font-normal text-white text-center Raleway'>
-                                Apple Fix is here to help you keep your iPhone running in tiptop shape. Just give us a ring.
+                               Budget Computers and Kiwi Mobiles is here to help you keep your iPhone running in tiptop shape. Just give us a ring.
                             </p>
                         </div>
                         )
@@ -38,7 +38,7 @@ export default function Home1() {
             <section className='py-16'>
                 <div className='container mx-auto px-4'>
                     <h4 className='text-base font-medium text-[#aaaaaa] Raleway uppercase mb-1 py-0'>
-                        @ AppleFix
+                        @ Budget Computers and Kiwi Mobiles
                         <span className='hr_line inline-block my-1.5 w-[120px] ml-2 h-[1px] bg-yellow-500'></span>
                     </h4>
                     <h2 className='md:text-4xl text-2xl font-bold Raleway uppercase py-0'>
@@ -90,7 +90,7 @@ export default function Home1() {
                                         Quality and Original Apple Parts
                                     </Link>
                                     <p className='text-base font-normal Raleway'>
-                                        Apple Fix uses nothing but top quality original or original equipment manufacturer (OEM) Apple parts for your gadgets. No guessing—the OEM parts we use for your iPhone, iPad, or MacBook, will be exactly what you need.
+                                       Budget Computers and Kiwi Mobiles uses nothing but top quality original or original equipment manufacturer (OEM) Apple parts for your gadgets. No guessing—the OEM parts we use for your iPhone, iPad, or MacBook, will be exactly what you need.
                                     </p>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@ export default function Home1() {
                                         Quality and Original Apple Parts
                                     </Link>
                                     <p className='text-base font-normal Raleway'>
-                                        Apple Fix uses nothing but top quality original or original equipment manufacturer (OEM) Apple parts for your gadgets. No guessing—the OEM parts we use for your iPhone, iPad, or MacBook, will be exactly what you need.
+                                       Budget Computers and Kiwi Mobiles uses nothing but top quality original or original equipment manufacturer (OEM) Apple parts for your gadgets. No guessing—the OEM parts we use for your iPhone, iPad, or MacBook, will be exactly what you need.
                                     </p>
                                 </div>
                             </div>
@@ -116,7 +116,7 @@ export default function Home1() {
                                         Quality and Original Apple Parts
                                     </Link>
                                     <p className='text-base font-normal Raleway'>
-                                        Apple Fix uses nothing but top quality original or original equipment manufacturer (OEM) Apple parts for your gadgets. No guessing—the OEM parts we use for your iPhone, iPad, or MacBook, will be exactly what you need.
+                                       Budget Computers and Kiwi Mobiles uses nothing but top quality original or original equipment manufacturer (OEM) Apple parts for your gadgets. No guessing—the OEM parts we use for your iPhone, iPad, or MacBook, will be exactly what you need.
                                     </p>
                                 </div>
                             </div>
@@ -129,7 +129,7 @@ export default function Home1() {
                                         Quality and Original Apple Parts
                                     </Link>
                                     <p className='text-base font-normal Raleway'>
-                                        Apple Fix uses nothing but top quality original or original equipment manufacturer (OEM) Apple parts for your gadgets. No guessing—the OEM parts we use for your iPhone, iPad, or MacBook, will be exactly what you need.
+                                       Budget Computers and Kiwi Mobiles uses nothing but top quality original or original equipment manufacturer (OEM) Apple parts for your gadgets. No guessing—the OEM parts we use for your iPhone, iPad, or MacBook, will be exactly what you need.
                                     </p>
                                 </div>
                             </div>
@@ -206,7 +206,7 @@ export default function Home1() {
                                         Affordable XBOX, PS5, XBOX 360, Microsoft XBOX, Gaming console Repairing
                                     </h3>
                                     <p className='text-sm font-normal Raleway mb-5'>
-                                        Affordable and Highly experienced Gaming console Repairing. AppleFix Hamilton, New Zealand, Fast Xbox Repair Services Are you tired of experiencing issues with your Xbox gaming console and paying a hefty repair price? Look no further, as we offer at AppleFix, affordable and fast Xbox repair services. Our team of experts specialises in repairing gaming consoles,
+                                        Affordable and Highly experienced Gaming console Repairing. Budget Computers and Kiwi Mobiles Hamilton, New Zealand, Fast Xbox Repair Services Are you tired of experiencing issues with your Xbox gaming console and paying a hefty repair price? Look no further, as we offer at Budget Computers and Kiwi Mobiles, affordable and fast Xbox repair services. Our team of experts specialises in repairing gaming consoles,
                                     </p>
                                     <Link href="#" className='text-sm font-normal uppercase text-white bg-yellow-500 hover:bg-black Raleway block w-fit py-[13px] px-[34px] shadow-[0_2px_5px_0_rgba(0,0,0,0.16)]'>
                                         Read More
