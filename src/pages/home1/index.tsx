@@ -1,9 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
-import { FaGamepad, FaMobileAlt } from "react-icons/fa";
 import PartnerSlider from '@/components/partner-slider'
 import Image from 'next/image';
-import { IoSettingsOutline } from 'react-icons/io5';
 import TestimonialSlider from '@/components/testimonialSlider'
 import SeoMeta from '@/components/seo';
 import { Services } from "@/const/services"
