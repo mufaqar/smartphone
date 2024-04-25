@@ -12,10 +12,10 @@ export default function Home1() {
             <section className='py-16 bg-[url("/images/hero-bg.jpg")] bg-top bg-cover bg-no-repeat bg-fixed min-h-screen h-full bg-blend-overlay bg-black/60 flex flex-col items-center justify-center'>
                 <div className='md:max-w-[660px] mx-auto px-4'>
                     <h1 className='md:text-[56px] md:leading-[60px] text-2xl font-bold text-white text-center Raleway py-2 px-7 border-2 border-white rounded'>
-                        Electronic Repair Experts
+                    Your Destination for High-Tech Digital and Electronics Repair Services at Budget Computers and Kiwi Mobiles Rotorua
                     </h1>
                     <p className='md:text-2xl text-lg font-normal text-white text-center Raleway my-5'>
-                        We are team of talented Electronic Repair Experts in ROTORUA New zealand
+                    Our team of qualified experts is highly specialized in repairing various smartphones, laptops, computers, gaming consoles, and peripherals. We excel in all aspects of motherboard repair for iPhones, Samsung, OPPO, MacBooks, and Gaming consoles.
                     </p>
                 </div>
                 <div className='container mx-auto px-4 grid md:grid-cols-4 grid-cols-1 gap-5 mt-16'>
