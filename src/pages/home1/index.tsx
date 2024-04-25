@@ -12,12 +12,12 @@ export default function Home1() {
         <>
          <SeoMeta title="Budget Computers and Kiwi Mobiles in Rotorua, New Zealand." description="Budget Computers  specialize in offering a wide range of budget-friendly computers, mobile phones, and related accessories" url="https://budgetrepaircenter.nz/home1" />
      
-            <section className='py-16 bg-[url("/images/hero-bg.jpg")] bg-top bg-cover bg-no-repeat bg-fixed min-h-screen h-full bg-blend-overlay bg-blue-900/60 flex flex-col items-center justify-center'>
-                <div className='md:max-w-[660px] mx-auto px-4'>
-                    <h1 className='md:text-[56px] md:leading-[60px] text-2xl font-bold text-white text-center Raleway py-2 px-7 border-2 border-white rounded'>
+            <section className='py-16 bg-[url("/images/hero-bg.jpg")] bg-top bg-cover bg-no-repeat bg-fixed min-h-screen h-full bg-blend-overlay bg-blue-900/80 flex flex-col items-center justify-center'>
+                <div className='md:max-w-[960px] mx-auto px-4'>
+                    <h1 className='md:text-[42px] md:leading-[42px] text-2xl font-bold text-white text-center Raleway py-2 px-7 border-2 border-white rounded'>
                     Your Destination for High-Tech Digital and Electronics Repair Services at Budget Computers and Kiwi Mobiles Rotorua
                     </h1>
-                    <p className='md:text-2xl text-lg font-normal text-white text-center Raleway my-5'>
+                    <p className='md:text-xl text-base font-normal text-white text-center Raleway my-5'>
                     Our team of qualified experts is highly specialized in repairing various smartphones, laptops, computers, gaming consoles, and peripherals. We excel in all aspects of motherboard repair for iPhones, Samsung, OPPO, MacBooks, and Gaming consoles.
                     </p>
                 </div>
