@@ -14,10 +14,10 @@ export default function Home1() {
             <section className='py-16 bg-[url("/images/bgg4.avif")] bg-top bg-cover bg-no-repeat bg-fixed min-h-screen h-full bg-blend-overlay bg-black/50 flex flex-col items-center justify-center'>
                 <div className='md:max-w-[960px] mx-auto px-4'>
                     <h1 className='md:text-[42px] md:leading-[42px] text-2xl font-bold text-white text-center Poppins tracking-[1px] py-2 px-7 border-2 border-white rounded'>
-                        Your Destination for High-Tech Digital and Electronics Repair Services at Budget Computers and Kiwi Mobiles Rotorua
+                    Reliable iPhone Repair Rotorua: Fast Service Guaranteed
                     </h1>
                     <p className='md:text-xl text-base font-normal text-white text-center Raleway my-5'>
-                        Our team of qualified experts is highly specialized in repairing various smartphones, laptops, computers, gaming consoles, and peripherals. We excel in all aspects of motherboard repair for iPhones, Samsung, OPPO, MacBooks, and Gaming consoles.
+                    Have you ever experienced the frustration of a cracked screen or water-damaged iPhone in Rotorua, New Zealand? It can be a nightmare, especially when your phone is essential for work and communication. 
                     </p>
                 </div>
                 <div className='container mx-auto px-4 grid md:grid-cols-4 grid-cols-1 gap-5 mt-16'>
@@ -76,7 +76,7 @@ export default function Home1() {
                         <span className='hr_line inline-block my-1.5 w-[120px] ml-2 h-[1px] bg-yellow-500'></span>
                     </h4>
                     <h2 className='md:text-4xl text-2xl font-bold Raleway uppercase py-0'>
-                        DIGITAL DEVICE REPAIR SERVICES
+                    Why Choose Budget Repair Center Computers & Kiwi Mobiles? Affordable iPhone Repair in Rotorua?
                     </h2>
                     <div className='grid md:grid-cols-2 grid-cols-1 gap-7 mt-10'>
                         <div>
@@ -124,7 +124,7 @@ export default function Home1() {
                         <span className='hr_line inline-block my-1.5 w-[120px] ml-2 h-[1px] bg-yellow-500'></span>
                     </h4>
                     <h2 className='md:text-4xl text-2xl font-bold Raleway uppercase py-0'>
-                        CHECK OUR MORE SERVICES
+                    Comprehensive Range of Services Offered
                     </h2>
                     <div className='grid md:grid-cols-4 grid-cols-1 gap-5 mt-10'>
                         {Services?.slice(12, 16).map((item: any, idx: number) => {
@@ -181,6 +181,10 @@ export default function Home1() {
                             </div>
                             )
                         })}
+                    </div>
+                    <div className='text-center lg:w-[80%] w-full mx-auto mt-6'>
+                        <h2 className='text-3xl font-bold text-black'>Conclusion</h2>
+                        <p className=' font-normal Raleway'>In conclusion, Budget Center & Computers & Kiwi Mobiles. Affordable Repair in Rotorua offers fast and reliable service for all your smartphone and laptop repair needs. With expert technicians and a commitment to quality assurance, you can trust that your device is in good hands. They offer comprehensive services to get your device back in working order, from screen to water damage solutions, battery replacements, motherboards and more. The process is convenient and efficient, with convenient scheduling and fast service. And if your device is not an iPhone, we can still help. Don't let a broken device hold you back; contact Affordable iPhone Repair in Rotorua today for all your needs.</p>
                     </div>
                 </div>
             </section>
