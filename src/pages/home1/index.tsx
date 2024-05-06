@@ -17,7 +17,7 @@ export default function Home1() {
                     Reliable iPhone Repair Rotorua: Fast Service Guaranteed
                     </h1>
                     <p className='md:text-xl text-base font-normal text-white text-center Raleway my-5'>
-                    Have you ever experienced the frustration of a cracked screen or water-damaged iPhone in Rotorua, New Zealand? It can be a nightmare, especially when your phone is essential for work and communication. 
+                    Have you ever experienced the frustration of a cracked screen or water-damaged iPhone in Rotorua, New Zealand? It can be a nightmare, especially when your phone is essential for work and communication. That's where Affordable iPhone Repair Center Rotorua comes in, providing fast and reliable service for all Models of iPhone repair needs, including iPhone screen repair with 1-Year warranty. With expert technicians and quality assurance warranties, you can trust that your device is in good hands. We offer comprehensive services for iPhone and Samsung devices and solutions for water damage, performance issues, battery replacement, and more. The repair process is convenient and has fast turnaround times. Only Budget Repair Centre, HI-TECH LAB, is equipped with the latest tools and machines and expertly qualified Technicians. r device as soon as possible. Don't let a broken device disrupt your life - choose Affordable iPhone Repair Rotorua for affordable and reliable iPhone screen repairs in Rotorua, Bay of Plenty, New Zealand.
                     </p>
                 </div>
                 <div className='container mx-auto px-4 grid md:grid-cols-4 grid-cols-1 gap-5 mt-16'>
@@ -78,6 +78,9 @@ export default function Home1() {
                     <h2 className='md:text-4xl text-2xl font-bold Raleway uppercase py-0'>
                     Why Choose Budget Repair Center Computers & Kiwi Mobiles? Affordable iPhone Repair in Rotorua?
                     </h2>
+                    <p className='Raleway uppercase mt-2 text-md font-normal'>
+                    Are you looking for professional and reliable iPhone repair in Rotorua? Our expert technicians offer affordable pricing, quick turnaround time, and quality parts for long-lasting performance. With comprehensive knowledge of various models, we provide cost-effective solutions for all your repair needs.
+                    </p>
                     <div className='grid md:grid-cols-2 grid-cols-1 gap-7 mt-10'>
                         <div>
                             <Image src="/images/digital.jpg" alt='feature' width={1024} height={768} className='max-h-[768px]' />
@@ -126,6 +129,7 @@ export default function Home1() {
                     <h2 className='md:text-4xl text-2xl font-bold Raleway uppercase py-0'>
                     Comprehensive Range of Services Offered
                     </h2>
+                    <p className='Raleway uppercase mt-2 text-md font-normal'>Our one-stop solution covers a comprehensive range of services for various models. Our expertise is in resolving software and hardware issues, including specialized repairs for screens, motherboards, and water damage. Count on us for convenient and reliable service and comprehensive maintenance.</p>
                     <div className='grid md:grid-cols-4 grid-cols-1 gap-5 mt-10'>
                         {Services?.slice(12, 16).map((item: any, idx: number) => {
                             return (<div key={idx} className='py-[80px] px-5 border border-[#ebebeb] hover:border-white bg-white hover:translate-y-[-10px] hover:shadow-[0_0_25px_rgba(0,0,0,0.1)] transition duration-300 ease-in-out'>

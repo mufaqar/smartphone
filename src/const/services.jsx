@@ -88,18 +88,18 @@ export const Services = [
         icon: <FaRegFileAlt />,
         title: "Water Damage and Performance Issues Solutions",
         link: "#",
-        content: "Our expert technicians have effective solutions if your iPhone or other devices have water damage issues. We provide thorough diagnosis and fixes for performance issues, utilizing expert techniques and specialized equipment. ",
+        content: "Our expert technicians have effective solutions if your iPhone or other devices have water damage issues. We provide thorough diagnosis and fixes for performance issues, utilizing expert techniques and specialized equipment. Our reliable maintenance will extend the lifespan of your device. ",
     },
     {
         icon: <MdOutlineSpeed />,
         title: "Battery Replacement and Maintenance",
         link: "#",
-        content: "Our efficient battery replacement services for iPhones and other devices ensure extended battery life. We diagnose and address battery-related issues for optimal performance and provide proper maintenance to prevent future problems.",
+        content: "Our efficient battery replacement services for iPhones and other devices ensure extended battery life. We diagnose and address battery-related issues for optimal performance and provide proper maintenance to prevent future problems. Trust our fast and reliable battery replacement services.",
     },
     {
         icon: <AiOutlineYoutube />,
         title: "Youtube Channel",
         link: "#",
-        content: "Join us at Budget Computers and Kiwi Mobiles for expert insights, tips, and reviews to maximize your Apple experience.",
+        content: "Join us at Budget Computers and Kiwi Mobiles as we delve deep into the world of Apple products. Whether you're an avid user or just starting your Apple journey, our YouTube channel offers expert insights, valuable tips, and in-depth reviews to help you make the most out of your Apple experience.",
     },
 ]
