@@ -14,9 +14,9 @@ export const Services = [
     },
     {
         icon: <FaTabletAlt />,
-        title: "iPad/iPod Repair",
+        title: "Is It Worth Repairing an Older iPad or iPod?",
         link: "#",
-        content: "Since the inception of the iPad, Budget Computers and Kiwi Mobiles, the leading iPad repair centre in Rotorua.",
+        content: "Repairing an older iPad or iPod can be more cost-effective than purchasing a new device.",
     },
     {
         icon: <MdOutlineDesktopMac />,
@@ -56,15 +56,15 @@ export const Services = [
     },
     {
         icon: <IoSettingsOutline />,
-        title: "Quality and Original Apple Parts",
+        title: "Do we offer a warranty on repairs?",
         link: "#",
-        content: "Budget Computers and Kiwi Mobilesuses nothing but top quality original or original equipment manufacturer (OEM) Apple parts for your gadgets. No guessing—the OEM parts we use for your iPhone, iPad, or MacBook, will be exactly what you need.",
+        content: "Yes, a 1-year warranty on any part, screen change replacement, or any other issue we fixed comes under a 1-year warranty. See T&C*",
     },
     {
         icon: <MdOutlineSpeed />,
-        title: "Fast and Affordable Repair Service",
+        title: "Expert iPhones All Models Repair Services",
         link: "#",
-        content: "We trust in our technicians and their proficiency in repairing Apple gadgets—because it shows in the quality and speed of their work. We fix your broken device as soon as we can at an incredibly affordable price. With us, you save time—and money.",
+        content: "Our skilled technicians specialize in diagnosing and fixing various issues on any model. With extensive experience working with different brands and models, we ensure efficient repairs to get your devices up and running smoothly. Customer satisfaction is our top priority.",
     },
     {
         icon: <MdOutlineHighQuality />,
@@ -74,27 +74,27 @@ export const Services = [
     },
     {
         icon: <BsTrophy />,
-        title: "Customer Satisfaction Guaranteed",
+        title: "Quality Assurance with Warranties",
         link: "#",
-        content: "Our local repair centre is growing fast, and we are gaining a loyal following of happy and satisfied customers. That is because customer satisfaction is the bread and butter of our business.",
+        content: "Our quality assurance ensures peace of mind with warranties on repairs and replaced parts. We are committed to providing reliable and durable solutions for your iPhone, backed by warranty coverage for additional cost protection. Our customer-focused approach ensures repairs are done to the highest quality standards.",
     },
     {
         icon: <IoIosGlobe />,
-        title: "Data Recovery",
+        title: "Screen & Back GlassRepairs ",
         link: "#",
-        content: "Lost your precious data? Let Budget Computers and Kiwi Mobiles be your lifeline. Our expert data recovery service ensures your memories and work are never lost.",
+        content: "You can get quick and efficient screen repairs for iPhones and devices. Our expert technicians ensure precise and accurate screen replacements using high-quality screens. We offer affordable options without compromising quality and provide fast turnaround times to minimize disruptions.",
     },
     {
         icon: <FaRegFileAlt />,
-        title: "Mail-In Repair",
+        title: "Water Damage and Performance Issues Solutions",
         link: "#",
-        content: "Get your Apple device back in prime condition hassle-free with our convenient Mail-In Repair service.",
+        content: "Our expert technicians have effective solutions if your iPhone or other devices have water damage issues. We provide thorough diagnosis and fixes for performance issues, utilizing expert techniques and specialized equipment. ",
     },
     {
         icon: <MdOutlineSpeed />,
-        title: "Training",
+        title: "Battery Replacement and Maintenance",
         link: "#",
-        content: "Unlock your team's full potential with our comprehensive training service, tailored to elevate skills and boost productivity.",
+        content: "Our efficient battery replacement services for iPhones and other devices ensure extended battery life. We diagnose and address battery-related issues for optimal performance and provide proper maintenance to prevent future problems.",
     },
     {
         icon: <AiOutlineYoutube />,
