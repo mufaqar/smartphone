@@ -179,7 +179,7 @@ function index() {
               why we offer various services to address different laptop issues.
               From speed optimization to cooling system repairs and battery
               management, we have the expertise to ensure your laptop runs
-              smoothly and efficiently. <br /><br /> Whether your laptop is experiencing
+              smoothly and efficiently. <br /><br />git Whether your laptop is experiencing
               performance issues, overheating problems, or battery drainage
               concerns, we have the knowledge and skills to provide the
               necessary solutions. With our tailored solutions, you can trust us
