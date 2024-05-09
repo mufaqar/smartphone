@@ -39,19 +39,19 @@ export const Services = [
     {
         icon: <FaMobileAlt />,
         title: "Mobile Phone Repairs",
-        link: "#",
+        link: "http://localhost:3000/mobile-repair",
         content: "Mobiles phones are part of our lives but when they break down getting them fixed timely is important. We are professional mobile phone repairs shop in Rotorua New Zealand.",
     },
     {
         icon: <MdOutlineSpeed />,
         title: "Samsung Repairs",
-        link: "#",
+        link: "http://localhost:3000/samsung-repair",
         content: "If your Samsung phone screen is broken and you want a quick repair with genuine parts and professionally repaired for your peace of mind. Bring it to Budget Computers and Kiwi Mobiles Rotorua.",
     },
     {
         icon: <BsLaptop />,
         title: "Laptop Repair",
-        link: "#",
+        link: "http://localhost:3000/laptop-repair",
         content: "Budget Computers and Kiwi Mobiles Rotorua is laptop repair specialists. Provide efficiently diagnostic and world class technical support services for your laptop or desktop computer.",
     },
     {
