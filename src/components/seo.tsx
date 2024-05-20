@@ -23,6 +23,7 @@ const SeoMeta = ({ title, description, url }: any) => {
             <meta name="twitter:site" content="@budgetrepaircenter" />
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
+            <meta name="google-adsense-account" content="ca-pub-9016132229650795" />
         </Head>
     );
 };
