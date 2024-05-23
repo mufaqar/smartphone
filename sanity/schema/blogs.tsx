@@ -27,6 +27,11 @@ export const blogs=defineType({
       },
     }),
     defineField({
+      name: 'short_info',
+      title: 'Short Info',
+      type: 'text',
+    }),
+    defineField({
       name: 'mainImage',
       title: 'Main image',
       type: 'image',

@@ -1,47 +1,50 @@
-import {defineField, defineType} from 'sanity'
-export const services=defineType({
-  name: 'services',
-  title: 'Services',
-  type: 'document',
+import { defineField, defineType } from "sanity";
+export const services = defineType({
+  name: "services",
+  title: "Services",
+  type: "document",
   fields: [
     defineField({
-      name: 'title',
-      title: 'Title',
-      type: 'string',
+      name: "title",
+      title: "Title",
+      type: "string",
     }),
     defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
+      name: "slug",
+      title: "Slug",
+      type: "slug",
       options: {
-        source: 'title',
+        source: "title",
         maxLength: 96,
       },
     }),
     defineField({
-      name: 'mainImage',
-      title: 'Main image',
-      type: 'image',
+      name: "mainImage",
+      title: "Main image",
+      type: "image",
       options: {
         hotspot: true,
       },
     }),
     defineField({
-      name: 'icon',
-      title: 'Icon',
-      type: 'image',
+      name: "icon",
+      title: "Icon",
+      type: "image",
     }),
     defineField({
-            
-        title: 'Content', 
-        name: 'content',
-        type: 'array', 
-        of: [
-            {
-              type: 'block'
-            }
-          ]
-      
+      name: "short_info",
+      title: "Short Info",
+      type: "text",
+    }),
+    defineField({
+      title: "Content",
+      name: "content",
+      type: "array",
+      of: [
+        {
+          type: "block",
+        },
+      ],
     }),
   ],
-})
+});

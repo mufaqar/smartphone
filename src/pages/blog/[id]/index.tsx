@@ -3,7 +3,8 @@ import { client } from '../../../../sanity/lib/client'
 import PageBanner from "@/components/page-banner";
 import SeoMeta from "@/components/seo";
 import { urlForImage } from '../../../../sanity/lib/image';
-const BlogsContent = ({ content, mainImage, title, slug }: any) => {
+const BlogsContent = ({ blog, slug }: any) => {
+  const {content, mainImage , title} = blog
 
   return (
     <>
@@ -30,7 +31,7 @@ const BlogsContent = ({ content, mainImage, title, slug }: any) => {
             </div>
 
 
-            <div className=" px-2 py-2  pb-12">
+            <div className=" px-2 py-2  pb-12 ">
 
               {content ? <PortableText value={content} /> : <p>No content available.</p>}
 
@@ -42,18 +43,22 @@ const BlogsContent = ({ content, mainImage, title, slug }: any) => {
   );
 };
 
-export async function getServerSideProps({ params }: { params: any }) {
+export async function getServerSideProps({ params }:any) {
   const id = params.id;
-  const res = await client.fetch(`*[_type == "blogs" && slug.current == "${id}"]{content, mainImage , title}`);
+  const res = await client.fetch(`*[_type == "blogs" && slug.current == "${id}"][0]{content, mainImage , title }`);
+  
+  if (!res) {
+    return {
+        notFound: true,
+    };
+}
 
-  return {
-    props: {
-      content: res[0]?.content || null,// Use optional chaining to handle undefined
-      mainImage: res[0]?.mainImage || null,
-      title: res[0]?.title || null,
+  return{
+    props:{
+      blog:res,
       slug: id
-    },
-  };
+    }
+  }
 }
 
 export default BlogsContent;
