@@ -43,7 +43,7 @@ export default function Home1({blogsdata, servicesData}:any) {
               <div
                 key={idx}
                 className="py-[30px] px-5 border border-white/60 hover:border-yellow-500"
-              >              
+              >                 
                 <span className="text-7xl text-yellow-500 flex justify-center w-full">
                   <Image src={item?.icon.asset.url} alt="" width={60} height={60}/>
                 </span>
